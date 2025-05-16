@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+
+@theme {
+  --radius-4xl: 2rem;
+  --color-primary:  #404042;
+  --color-primary-foreground: #fafafa;
+  --color-secondary: #E31C79;
+  --color-avangarda: #E31C79;
+}
+
+@keyframes move-x {
+  0% {
+    transform: translateX(var(--move-x-from));
+  }
+  100% {
+    transform: translateX(var(--move-x-to));
+  }
+}
+
+/* Define custom utilities for fonts */
+@utility font-raleway {
+  font-family: var(--font-raleway);
+}
+
+@utility font-alata {
+  font-family: var(--font-alata);
+}
+
+@utility font-geist-sans {
+  font-family: var(--font-geist-sans);
+}
+
+@utility font-geist-mono {
+  font-family: var(--font-geist-mono);
+}
+
+@layer base {
+  body {
+    @apply bg-white text-black font-raleway;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-alata;
+  }
+  
+  /* Add these styles to hide scrollbar but keep functionality */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  /* Custom Scrollbar Styles */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #f42388;
+    border-radius: 3px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #d01e74;
+  }
+
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #f42388 transparent;
+  }
+}
+

@@ -1,0 +1,608 @@
+{
+  "nav": {
+    "rooms": "ROOMS",
+    "dining": "RESTAURANT",
+    "spa": "SPA & WELLNESS",
+    "events": "WEDDINGS",
+    "business": "BUSINESS",
+    "entertainment": "ENTERTAINMENT",
+    "gallery": "GALLERY",
+    "book": "BOOK NOW",
+    "menu": "Menu",
+    "phone": "+48 574 383 282",
+    "subscribe": "Subscribe",
+    "rights": "All rights reserved",
+    "privacy": "Privacy Policy"
+  },
+  "about": {
+    "title": "Hotel Avangarda",
+    "description": "Hotel Avangarda is located in the heart of the charming town of Różan, providing a perfect combination of tranquility and easy access to local attractions. It's a place where tradition meets modernity, creating ideal conditions for relaxation and exploring the surroundings.",
+    "address": "ul. Przykładowa 1, 07-300 Różan",
+    "phone": "+48 574 383 282",
+    "email": "recepcja@avangarda.pl",
+    "hours": "Reception open 24/7",
+    "directions": {
+      "car": "Easy access from national road 61. Free parking available on site.",
+      "public": "Regular bus connections from Warsaw and Ostrołęka. The bus stop is located 200m from the hotel."
+    },
+    "googleMaps": "Open in Google Maps"
+  },
+  "offers": {
+    "title": "Packages",
+    "description": "Our packages are the perfect way to spend time in an exceptional atmosphere. Choose an offer tailored to your needs and enjoy unforgettable moments at Hotel Avangarda.",
+    "details": "Details",
+    "from": "from",
+    "items": [
+      {
+        "id": 1,
+        "title": "Valentine's Day Offer",
+        "image": "/pakiet-walentynki.png",
+        "description": "Valentine's Day is just around the corner, so plan today how you'll spend the most romantic weekend of the year"
+      },
+      {
+        "id": 2,
+        "title": "Winter Break",
+        "image": "/pakiet-ferie.png",
+        "description": "Spend your winter break with us and enjoy activities regardless of the weather!❄️ Family atmosphere, delicious meals, and plenty of attractions for children and adults"
+      },
+      {
+        "id": 3,
+        "title": "Easter Holiday",
+        "image": "/pakiet-ferie.png",
+        "description": "Spend your winter break with us and enjoy activities regardless of the weather!❄️ Family atmosphere, delicious meals, and plenty of attractions for children and adults"
+      }
+    ]
+  },
+  "restaurants": {
+    "title": "Restaurants",
+    "description": "Our restaurants offer a wide range of dishes that will satisfy even the most demanding palates. We invite you to taste our culinary delights.",
+    "details": "Details"
+  },
+  "diningDetails": {
+    "title": "Dzika Róża",
+    "description": "Our restaurant is a place where you can enjoy delicious meal in a unique atmosphere. We offer a wide range of dishes that will satisfy even the most demanding palates. We invite you to taste our culinary delights.",
+    "hours": {
+      "weekdays": "Monday - Thursday",
+      "weekend": "Friday - Sunday",
+      "weekdaysTime": "12:00-22:00",
+      "weekendTime": "12:00-23:00"
+    },
+    "menu": "Menu",
+    "book": "Book a table",
+    "phone": "+48 29 752 50 34",
+    "restaurantTitle": "Our Restaurant",
+    "specialtiesTitle": "Our Specialties",
+    "specialtiesIntro": "Our restaurant is famous for its exceptional dishes that combine tradition with modernity. Each dish is prepared with passion by our experienced chefs who pay attention to the smallest details and highest quality.",
+    "seeInMenu": "See in menu",
+    "priceRange": "Price range:"
+  },
+  "clubDetails": {
+    "title": "Klub Kula",
+    "description": "Klub Kula is a place where you can relax and have fun. We offer a wide range of drinks and snacks, as well as a unique atmosphere that will make your evening unforgettable.",
+    "hours": "Open daily from 18:00 to 02:00",
+    "menu": "Menu",
+    "book": "Book a table"
+  },
+  "fortDetails": {
+    "title": "FORT No.4",
+    "description": "The Fort is barbecue restaurant located in the heart of the city. We offer a wide range of dishes that will satisfy even the most demanding palates. We invite you to taste our culinary delights.",
+    "button": "Details"
+  },
+  "portDetails": {
+    "title": "Port",
+    "description": "Port is a place where you can relax and have fun. We offer a wide range of drinks and snacks, as well as a unique atmosphere that will make your evening unforgettable.",
+    "button": "Details"
+  },
+  "rooms": {
+    "title": "Our Rooms",
+    "description": "Our hotel is located in two buildings and offers 42 comfortable rooms, including single and double rooms, family studios, and apartments. The main building has an elevator, and some rooms have a balcony with a view of the garden or the Narew River. In the external building, spacious rooms for two, three, and five people are available.",
+    "everyRoomHas": "Each room is equipped with:",
+    "roomAmenities": {
+      "ac": "air conditioning",
+      "tv": "TV with digital and radio channels",
+      "bathroom": "bathroom with shower, hairdryer, and toiletries",
+      "beverages": "tea and coffee making facilities and mineral water"
+    },
+    "chooseRoom": "Choose your room",
+    "tabs": {
+      "all": "All",
+      "standard": "Standard",
+      "family": "Family",
+      "apartment": "Apartments"
+    },
+    "standard": {
+      "name": "Standard Room",
+      "description": "Comfortable room with garden view, perfect for couples or business travelers.",
+      "price": "from 250 PLN / night",
+      "capacity": "1-2 people"
+    },
+    "family": {
+      "name": "Family Room",
+      "description": "Spacious room designed with families in mind, with additional space and amenities for children.",
+      "price": "from 450 PLN / night",
+      "capacity": "2-4 people"
+    },
+    "apartment": {
+      "name": "Apartment",
+      "description": "Luxurious apartment with separate bedroom, living room, and kitchenette, offering the highest standard of stay and living space.",
+      "price": "from 650 PLN / night",
+      "capacity": "2-5 people"
+    },
+    "features": {
+      "doubleBed": "Double bed",
+      "privateBathroom": "Private bathroom",
+      "flatScreenTV": "Flat-screen TV",
+      "freeWifi": "Free Wi-Fi",
+      "airConditioning": "Air conditioning",
+      "familyBeds": "Double bed and two single beds",
+      "largeBathroom": "Large bathroom with bathtub",
+      "fridgeMicrowave": "Fridge and microwave",
+      "loungeArea": "Lounge area",
+      "kingSizeBed": "Separate bedroom with king-size bed",
+      "sofaBed": "Living room with sofa bed",
+      "kitchenette": "Fully equipped kitchenette",
+      "diningArea": "Dining area for 4 people",
+      "luxuryBathroom": "Luxury bathroom with bathtub and shower",
+      "balcony": "Large balcony or terrace",
+      "smartTV": "Smart TV and audio system",
+      "coffeeMachine": "Coffee machine"
+    },
+    "gallery": {
+      "title": "Photo Gallery",
+      "image": "Image",
+      "of": "of",
+      "viewAll": "View all"
+    },
+    "amenities": "Amenities:",
+    "details": "Details",
+    "bookNow": "Book now"
+  },
+  "gastro": {
+    "tags": {
+      "traditional": "Traditional",
+      "polish": "Polish",
+      "local": "Local ingredients",
+      "seasonal": "Seasonal",
+      "fresh": "Fresh",
+      "changing": "Ever-changing",
+      "sweet": "Sweet",
+      "homemade": "Homemade",
+      "artistic": "Artistic",
+      "kids": "Kids",
+      "fun": "Fun",
+      "healthy": "Healthy"
+    },
+    "specialties": {
+      "polish": {
+        "name": "Traditional Polish Dishes",
+        "description": "Our menu offers classic Polish dishes prepared according to traditional recipes using the highest quality local ingredients. Each dish is a journey through the rich history of Polish cuisine.",
+        "price": "39-89 PLN"
+      },
+      "seasonal": {
+        "name": "Seasonal Menu",
+        "description": "Our seasonal menu changes with the seasons, using the freshest ingredients available at the time. This ensures our dishes always impress with their freshness and intensity of flavors.",
+        "price": "42-95 PLN"
+      },
+      "desserts": {
+        "name": "Exceptional Desserts",
+        "description": "Our pastry shop is famous for its exceptional desserts that are true works of art. Each dessert is a combination of perfect taste, texture, and aesthetics.",
+        "price": "22-38 PLN"
+      },
+      "kids": {
+        "name": "For Children",
+        "description": "We've prepared a special menu for our youngest guests. Healthy and tasty dishes that children love, prepared with the highest quality ingredients.",
+        "price": "22-38 PLN"
+      }
+    },
+    "tabs": {
+      "traditional": "Traditional",
+      "seasonal": "Seasonal",
+      "kids": "For Kids",
+      "desserts": "Desserts"
+    }
+  },
+  "spa": {
+    "title": "Spa & Wellness",
+    "description": "Welcome to our exclusive spa, where body and mind harmony is our priority. We offer comprehensive wellness, relaxing, and beautifying treatments that have been carefully selected to provide our guests with the highest level of relaxation and regeneration. Our spa is an oasis of peace where you can escape from everyday stress and immerse yourself in an atmosphere of luxury and relaxation.",
+    "description2": "We invite you to our modern Wellness area. For all guests, we have prepared a recreational pool, paddling pool, and jacuzzi. Adults have two saunas at their disposal - Finnish and Infrared - and a relaxation room with a heated lounger, footbaths for soaking before saunas, and an ice well to cool the body with ice flakes.",
+    "wellnessTitle": "Wellness & Spa",
+    "wellnessSubtitle": "Comprehensive treatments for body and soul",
+    "wellnessDescription": "Our wellness zone offers a wide selection of treatments that will help you take care of your body and mind. Our experienced therapists use the highest quality cosmetics and techniques to provide you with unforgettable experiences and visible effects.",
+    "downloadCatalog": "Download treatment catalog",
+    "saltRoomTitle": "Salt Room",
+    "saltRoomSubtitle": "Salt therapy for health and relaxation",
+    "saltRoomDescription": "Our salt room is a unique place where you can experience the beneficial properties of Himalayan salt. The microclimate in the salt room supports the treatment of many respiratory ailments, strengthens immunity, and has a relaxing effect on the entire body.",
+    "saltRoomBenefits": {
+      "respiratory": {
+        "title": "Respiratory support",
+        "description": "helps in the treatment of asthma, allergies, and other respiratory ailments"
+      },
+      "immunity": {
+        "title": "Strengthening immunity",
+        "description": "regular sessions in the salt room strengthen the body's natural immunity"
+      },
+      "stress": {
+        "title": "Relaxation and stress reduction",
+        "description": "the atmosphere of the salt room promotes deep relaxation and tension reduction"
+      }
+    },
+    "saltRoomPrices": {
+      "individual": {
+        "title": "Individual session",
+        "price": "60 PLN / 45 min"
+      },
+      "family": {
+        "title": "Family session (up to 4 people)",
+        "price": "160 PLN / 45 min"
+      },
+      "fivepack": {
+        "title": "5-session pass",
+        "price": "250 PLN"
+      }
+    },
+    "beautyTitle": "Beauty Salon",
+    "beautySubtitle": "Professional hand and nail care",
+    "beautyDescription": "Our manicure salon offers comprehensive hand and nail care. We use the highest quality products and the latest techniques to provide you with the perfect manicure that will last for a long time.",
+    "beautyServices": {
+      "classic": {
+        "title": "Classic manicure",
+        "description": "Traditional manicure with classic polish",
+        "price": "90 PLN"
+      },
+      "hybrid": {
+        "title": "Hybrid manicure",
+        "description": "Long-lasting manicure using hybrid polish",
+        "price": "120 PLN"
+      },
+      "japanese": {
+        "title": "Japanese manicure",
+        "description": "Nourishing treatment strengthening natural nails",
+        "price": "110 PLN"
+      },
+      "extension": {
+        "title": "Nail extension",
+        "description": "Professional nail extension using gel method",
+        "price": "from 180 PLN"
+      }
+    },
+    "bookAppointment": "Book an appointment",
+    "seeGallery": "See our work",
+    "hoursTitle": "Opening hours and pricing",
+    "priceNote": "* Prices may vary depending on the selected treatment. Detailed price list available at the spa reception.",
+    "phoneReservation": "Phone reservation",
+    "onlineReservation": "Online reservation",
+    "treatments": {
+      "massage": {
+        "name": "Relaxing massages",
+        "description": "A wide range of massages that will help you relax and unwind.",
+        "priceRange": "150 - 350 PLN",
+        "duration": "30 - 90 min"
+      },
+      "face": {
+        "name": "Facial treatments",
+        "description": "Professional care treatments for every skin type.",
+        "priceRange": "180 - 450 PLN",
+        "duration": "45 - 75 min"
+      },
+      "rituals": {
+        "name": "Spa rituals",
+        "description": "Comprehensive rituals for body and mind, inspired by traditions from around the world.",
+        "priceRange": "280 - 600 PLN",
+        "duration": "90 - 120 min"
+      }
+    },
+    "services": {
+      "hotStones": {
+        "name": "Hot Stone Massage",
+        "description": "Deeply relaxing massage using hot basalt stones.",
+        "price": "from 220 PLN",
+        "duration": "60 min"
+      },
+      "rejuvenation": {
+        "name": "Luxury rejuvenating treatment",
+        "description": "Intensively regenerating treatment using stem cells.",
+        "price": "from 380 PLN",
+        "duration": "75 min"
+      },
+      "chocolate": {
+        "name": "Chocolate ritual",
+        "description": "Nourishing ritual using natural chocolate and shea butter.",
+        "price": "from 320 PLN",
+        "duration": "90 min"
+      }
+    },
+    "hours": {
+      "title": {
+        "spa": "Spa Area",
+        "saltRoom": "Salt Room",
+        "manicure": "Manicure Salon"
+      },
+      "weekdaysLabel": "Monday - Friday",
+      "weekendsLabel": "Saturday - Sunday",
+      "spa": {
+        "weekdays": "10:00 - 21:00",
+        "weekends": "09:00 - 22:00"
+      },
+      "saltRoom": {
+        "weekdays": "11:00 - 20:00",
+        "weekends": "10:00 - 21:00"
+      },
+      "manicure": {
+        "weekdays": "10:00 - 19:00",
+        "weekends": "09:00 - 18:00"
+      },
+      "prices": {
+        "spa": "from 80 PLN / entry",
+        "saltRoom": "from 60 PLN / session",
+        "manicure": "from 90 PLN / treatment"
+      }
+    }
+  },
+  "events": {
+    "title": "Weddings & Events",
+    "description": "Organize an unforgettable wedding or event in our elegant venue. We offer spacious halls, a picturesque garden, and exquisite menu that will meet the expectations of even the most demanding guests. Our experienced team will take care of every detail so you can fully enjoy this special day.",
+    "bookDate": "Book a date",
+    "downloadOffer": "Download offer",
+    "venuesTitle": "Our venues",
+    "venuesDescription": "We offer a variety of spaces that can be adapted to your needs. Whether you're planning an intimate gathering or a lavish wedding, we'll find the perfect solution.",
+    "checkAvailability": "Check availability",
+    "availableDates": "Available dates",
+    "availabilityDescription": "Below you'll find a calendar with available dates for organizing a wedding or event. Green dates indicate available dates. Select a date to check details or book.",
+    "selectedDate": "Selected date",
+    "dateAvailable": "This date is available! Contact us to discuss details.",
+    "reserveDate": "Reserve this date",
+    "inquireDetails": "Inquire about details",
+    "galleryTitle": "Gallery",
+    "downloadOfferText": "Download our detailed wedding offer, which includes full menu, price packages, and all available options and additional services.",
+    "downloadWeddingOffer": "Download wedding offer",
+    "downloadOfferForm": {
+      "title": "Download wedding offer",
+      "description": "Fill out a short form to receive a complete wedding offer with menu and price list.",
+      "fullName": "Full name",
+      "email": "Email",
+      "phone": "Phone",
+      "download": "Download offer"
+    },
+    "venues": {
+      "ballroom": {
+        "name": "Ballroom",
+        "description": "Spacious and elegant space perfect for weddings and larger events. It offers modern amenities combined with classic decor.",
+        "size": "350m²",
+        "features": {
+          "danceFloor": "Dance floor",
+          "stage": "Stage for band",
+          "soundSystem": "Sound system",
+          "airConditioning": "Air conditioning"
+        }
+      },
+      "garden": {
+        "name": "Garden",
+        "description": "A picturesque garden space perfect for summer ceremonies and outdoor receptions. Beautiful natural surroundings create a romantic atmosphere.",
+        "size": "500m²",
+        "features": {
+          "gazebo": "Gazebo",
+          "fountain": "Fountain",
+          "decorativeLighting": "Decorative lighting",
+          "ceremonySpace": "Ceremony space"
+        }
+      },
+      "restaurant": {
+        "name": "Restaurant",
+        "description": "An intimate space with river views, perfect for smaller gatherings and family celebrations. Combines comfort with excellent cuisine.",
+        "size": "180m²",
+        "features": {
+          "riverView": "River view",
+          "bar": "Bar",
+          "cozyAtmosphere": "Cozy atmosphere",
+          "terrace": "Terrace"
+        }
+      }
+    },
+    "venueInfo": {
+      "maxGuests": "Maximum number of guests",
+      "area": "Area",
+      "amenities": "Amenities",
+      "seeGallery": "See gallery",
+      "people": "people"
+    },
+    "packages": {
+      "title": "Wedding packages",
+      "classic": {
+        "name": "Classic Package",
+        "description": "3-course menu, beverages, decorations",
+        "price": "from 500 PLN / person"
+      },
+      "premium": {
+        "name": "Premium Package",
+        "description": "4-course menu, open bar, decorations",
+        "price": "from 750 PLN / person"
+      },
+      "luxury": {
+        "name": "Luxury Package",
+        "description": "5-course menu, premium open bar, decorations",
+        "price": "from 1,000 PLN / person"
+      }
+    },
+    "services": {
+      "title": "Additional services",
+      "music": "DJ or live band",
+      "photo": "Photographer and videographer",
+      "flowers": "Floral decorations",
+      "kids": "Children's entertainment",
+      "fireworks": "Fireworks display"
+    },
+    "gallery": {
+      "ballroom": {
+        "alt": "Elegant wedding hall with round tables",
+        "title": "Ballroom"
+      },
+      "gardenCeremony": {
+        "alt": "Wedding ceremony in the garden",
+        "title": "Garden Ceremony"
+      },
+      "tableDecor": {
+        "alt": "Wedding table decorations",
+        "title": "Elegant Table Settings"
+      },
+      "eveningParty": {
+        "alt": "Evening wedding reception",
+        "title": "Evening Reception"
+      },
+      "buffet": {
+        "alt": "Appetizer buffet",
+        "title": "Exquisite Menu"
+      },
+      "dessertTable": {
+        "alt": "Wedding cake",
+        "title": "Dessert Table"
+      }
+    }
+  },
+  "business": {
+    "title": "Business Offer",
+    "description": "We offer modern and fully equipped conference spaces that will meet the expectations of even the most demanding business clients. Our conference rooms are perfect for trainings, conferences, board meetings, and corporate events. We provide the highest quality service, modern audiovisual equipment, and flexible space arrangement options.",
+    "downloadOffer": "Download business offer",
+    "checkAvailability": "Check availability",
+    "roomsTitle": "Our conference rooms",
+    "roomsDescription": "We offer a variety of conference spaces that can be adapted to your needs. Whether you're planning a small board meeting or a large conference, we'll find the perfect solution.",
+    "arrangementTitle": "Arrangement possibilities",
+    "arrangementDescription": "Our conference rooms can be arranged in many ways to adapt them to the nature of your event. Below are the most popular layouts and their capacity for the selected room.",
+    "downloadPlans": "Download arrangement plans",
+    "availabilityTitle": "Check availability",
+    "availabilityDescription": "Below you'll find a calendar with available dates for selected conference room. Green dates indicate available dates. Select a date to check details or make a reservation.",
+    "selectedDate": "Selected date",
+    "roomAvailable": "The room is available on this date!",
+    "reserveRoom": "Reserve this room",
+    "inquireDetails": "Inquire about details",
+    "downloadForm": {
+      "title": "Download business offer",
+      "description": "Fill out a short form to receive a complete business offer with pricing and available arrangements.",
+      "fullName": "Full name",
+      "company": "Company",
+      "email": "Email",
+      "phone": "Phone",
+      "download": "Download offer"
+    },
+    "rooms": {
+      "grand": {
+        "name": "Grand Hall",
+        "size": "680m²",
+        "description": "Our largest conference room with an area of 680m² is an ideal place for large conferences, congresses, galas, and corporate events. The room can be arranged in many ways and divided into 3 smaller spaces.",
+        "features": {
+          "audioVisual": "State-of-the-art audiovisual system",
+          "wifi": "High-speed WiFi (1 Gb/s)",
+          "screens": "4 projection screens 4K",
+          "soundSystem": "Bose sound system",
+          "divisible": "Can be divided into 3 smaller rooms",
+          "climate": "Air conditioning with individual control",
+          "lighting": "LED lighting with adjustable intensity",
+          "accessible": "Wheelchair accessible",
+          "terrace": "Direct access to terrace",
+          "reception": "Dedicated reception desk"
+        }
+      },
+      "executive": {
+        "name": "Exec Room",
+        "size": "120m²",
+        "description": "An elegant conference room designed for board meetings, client presentations, and smaller trainings. Equipped with the latest technologies and comfortable furniture.",
+        "features": {
+          "touchScreen": "85-inch interactive touch screen",
+          "wifi": "High-speed WiFi (1 Gb/s)",
+          "videoConference": "Video conferencing system",
+          "soundSystem": "Bose sound system",
+          "climate": "Air conditioning",
+          "lighting": "LED lighting",
+          "acoustic": "Premium acoustic insulation",
+          "chairs": "Ergonomic chairs"
+        }
+      },
+      "business": {
+        "name": "Business Center",
+        "size": "90m²",
+        "description": "A functional conference room perfect for trainings, workshops, and business meetings. Bright and spacious, with access to the terrace, making it possible to organize coffee breaks outdoors.",
+        "features": {
+          "screen": "75-inch 4K screen",
+          "wifi": "High-speed WiFi (1 Gb/s)",
+          "videoConference": "Video conferencing system",
+          "soundSystem": "Sound system",
+          "climate": "Air conditioning",
+          "naturalLight": "Natural daylight",
+          "terrace": "Terrace access"
+        }
+      }
+    },
+    "arrangements": {
+      "icons": {
+        "theater": "theater",
+        "classroom": "classroom",
+        "boardroom": "boardroom",
+        "banquet": "banquet",
+        "ushape": "u-shape"
+      },
+      "theater": {
+        "description": "Theater layout, ideal for presentations and lectures"
+      },
+      "classroom": {
+        "description": "Classroom layout with tables, ideal for trainings"
+      },
+      "boardroom": {
+        "description": "Single large table layout, ideal for board meetings"
+      },
+      "banquet": {
+        "description": "Banquet layout with round tables"
+      },
+      "ushape": {
+        "description": "U-shaped layout, ideal for discussions"
+      },
+      "layoutTitle": "Capacity in different layouts:",
+      "people": "people"
+    },
+    "roomInfo": {
+      "screens": "Screens",
+      "screensInfo": "4K Ultra HD",
+      "wifi": "WiFi",
+      "wifiInfo": "1 Gb/s",
+      "audio": "Audio",
+      "audioInfo": "Bose system",
+      "capacity": "Capacity",
+      "capacityInfo": "up to",
+      "lighting": "Lighting",
+      "lightingInfo": "Adjustable LED",
+      "catering": "Catering",
+      "cateringInfo": "Available",
+      "equipment": "Equipment and amenities:"
+    },
+    "packages": {
+      "title": "Conference packages",
+      "basic": {
+        "name": "Basic package",
+        "description": "Room, AV equipment, water, coffee break",
+        "price": "from 120 PLN / person"
+      },
+      "standard": {
+        "name": "Business package",
+        "description": "Room, AV equipment, 2 coffee breaks, lunch",
+        "price": "from 180 PLN / person"
+      },
+      "premium": {
+        "name": "Premium package",
+        "description": "Room, AV equipment, all-day catering, technical support",
+        "price": "from 250 PLN / person"
+      }
+    },
+    "rentals": {
+      "title": "Hourly rental",
+      "grand": {
+        "price": "from 1200 PLN / hour"
+      },
+      "executive": {
+        "price": "from 600 PLN / hour"
+      },
+      "business": {
+        "price": "from 400 PLN / hour"
+      },
+      "note": "* Prices may vary depending on the season and additional services. We offer attractive discounts for full-day rentals."
+    }
+  }
+}
+

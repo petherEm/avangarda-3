@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Hotel Avangarda - Modern Hotel Website
 
-## Getting Started
+## 🏨 About
 
-First, run the development server:
+Hotel Avangarda is a modern, responsive hotel website built with the latest web technologies. This project showcases a luxury hotel experience with features like room booking, package offers, restaurant information, spa services, and event spaces. The website is fully internationalized, supporting both Polish and English languages.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Responsive Design**: Optimized for all devices from mobile to desktop
+- **Internationalization**: Full support for Polish and English languages
+- **Content Management**: Easy content updates through Sanity.io
+- **Room Booking System**: Interactive room selection and booking process
+- **Package Offers**: Special hotel packages with detailed information
+- **Image Galleries**: Showcase of hotel amenities and spaces
+- **Contact Forms**: Integrated contact forms for inquiries and bookings
+- **SEO Optimized**: Built with best practices for search engine visibility
+- **Performance Focused**: Fast loading times and optimized assets
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Technologies
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Frontend
 
-## Learn More
+- **Next.js 15**: Utilizing the latest features including App Router and Server Components
+- **React 18**: Modern React with hooks and functional components
+- **TailwindCSS**: Utility-first CSS framework for rapid UI development
+- **TypeScript**: Type-safe JavaScript for better developer experience
+- **Framer Motion**: Smooth animations and transitions
+- **Lucide Icons**: Beautiful, consistent icon set
 
-To learn more about Next.js, take a look at the following resources:
+### Backend & CMS
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Sanity.io**: Headless CMS for content management
+- **Next.js API Routes**: Serverless functions for backend logic
+- **Server Components**: Latest React server component paradigm for improved performance
+- **Server Actions**: Direct mutations from server components
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Development Tools
 
-## Deploy on Vercel
+- **ESLint**: Code linting for consistent code style
+- **Prettier**: Code formatting
+- **Husky**: Git hooks for pre-commit checks
+- **Vercel**: Deployment and hosting platform
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📋 Prerequisites
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Before you begin, ensure you have the following installed:
+
+- Node.js (v18.17.0 or higher)
+- npm or yarn
+- Git

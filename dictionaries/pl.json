@@ -1,0 +1,607 @@
+{
+  "nav": {
+    "rooms": "POKOJE",
+    "dining": "RESTAURACJA",
+    "spa": "SPA & WELLNES",
+    "events": "WESELA",
+    "business": "DLA BIZNESU",
+    "entertainment": "ROZRYWKA",
+    "gallery": "GALERIA",
+    "book": "REZERWUJ",
+    "menu": "Menu",
+    "phone": "+48 574 383 282",
+    "subscribe": "Zapisz się",
+    "rights": "Wszelkie prawa zastrzeżone",
+    "privacy": "Polityka prywatności"
+  },
+  "about": {
+    "title": "Hotel Avangarda",
+    "description": "Hotel Avangarda położony jest w samym centrum urokliwego miasteczka Różan, zapewniając doskonałe połączenie spokoju i łatwego dostępu do lokalnych atrakcji. To miejsce, gdzie tradycja spotyka nowoczesność, tworząc idealne warunki do odpoczynku i odkrywania okolicy.",
+    "address": "ul. Przykładowa 1, 07-300 Różan",
+    "phone": "+48 574 383 282",
+    "email": "recepcja@avangarda.pl",
+    "hours": "Recepcja czynna całą dobę",
+    "directions": {
+      "car": "Łatwy dojazd drogą krajową nr 61. Bezpłatny parking na miejscu.",
+      "public": "Regularne połączenia autobusowe z Warszawy i Ostrołęki. Przystanek znajduje się 200m od hotelu."
+    },
+    "googleMaps": "Otwórz w Google Maps"
+  },
+  "offers": {
+    "title": "Nasze propozycje",
+    "description": "Nasze pakiety to idealny sposób na spędzenie czasu w wyjątkowej atmosferze. Wybierz ofertę dopasowaną do swoich potrzeb i ciesz się niezapomnianymi chwilami w Hotelu Avangarda.",
+    "details": "Szczegóły",
+    "from": "już od",
+    "items": [
+      {
+        "id": 1,
+        "title": "Oferta walentynki",
+        "image": "/pakiet-walentynki.png",
+        "description": "Walentynki tuż, tuż, więc już dziś zaplanuj, jak spędzisz najbardziej romantyczny weekend w roku"
+      },
+      {
+        "id": 2,
+        "title": "Ferie Zimowe",
+        "image": "/pakiet-ferie.png",
+        "description": "Spędź z nami zimowe ferie i ciesz się aktywnością niezależnie od pogody!❄️ Rodzinna atmosfera, pyszne posiłki oraz mnóstwo atrakcji dla dzieci i dorosłych"
+      },
+      {
+        "id": 3,
+        "title": "Wielkanoc",
+        "image": "/pakiet-ferie.png",
+        "description": "Spędź z nami zimowe ferie i ciesz się aktywnością niezależnie od pogody!❄️ Rodzinna atmosfera, pyszne posiłki oraz mnóstwo atrakcji dla dzieci i dorosłych"
+      }
+    ]
+  },
+  "restaurants": {
+    "title": "Restauracje i bary",
+    "description": "Nasza restauracja to miejsce, gdzie tradycyjne smaki spotykają się z nowoczesnym podejściem do kulinariów. Oferujemy szeroki wybór dań, przygotowywanych z najwyższą starannością i dbałością o jakość składników. Zapraszamy na wyjątkowe doznania smakowe w wyjątkowym miejscu.",
+    "details": "Szczegóły"
+  },
+  "diningDetails": {
+    "title": "Dzika Róża",
+    "description": "Restauracja Dzika Róża to wyjątkowe połączenie elegancji i przytulnej atmosfery. Oferujemy szeroki wybór wyśmienitych dań, przygotowywanych z najwyższej jakości składników. To idealne miejsce zarówno na uroczystą kolację, romantyczny wieczór, jak i rodzinny obiad. Zapraszamy do odkrycia niezapomnianych smaków w klimatycznym wnętrzu naszej restauracji!",
+    "hours": {
+      "weekdays": "Poniedziałek - Czwartek",
+      "weekend": "Piątek - Niedziela",
+      "weekdaysTime": "12:00-22:00",
+      "weekendTime": "12:00-23:00"
+    },
+    "menu": "Menu",
+    "book": "Zarezerwuj",
+    "phone": "+48 29 752 50 34",
+    "restaurantTitle": "Nasza restauracja",
+    "specialtiesTitle": "Nasze specjalności",
+    "specialtiesIntro": "Nasza restauracja słynie z wyjątkowych dań, które łączą tradycję z nowoczesnością. Każde danie przygotowywane jest z pasją przez naszych doświadczonych szefów kuchni, którzy dbają o najdrobniejsze detale i najwyższą jakość.",
+    "seeInMenu": "Zobacz w menu",
+    "priceRange": "Zakres cenowy:"
+  },
+  "clubDetails": {
+    "title": "Klub Kula",
+    "description": "Klub Kula to miejsce, gdzie świetna zabawa łączy się z pysznym jedzeniem! U nas zjesz doskonałą pizzę, wypijesz kreatywne drinki i spędzisz wieczór pełen emocji przy kręglach i bilardzie. Idealne miejsce na spotkania ze znajomymi i niezapomniane chwile!",
+    "menu": "Menu",
+    "book": "Book a table"
+  },
+  "fortDetails": {
+    "title": "FORT No.4",
+    "description": "W sezonie letnim zapraszamy do Fortu – wyjątkowego miejsca na świeżym powietrzu, gdzie czeka na Was klimatyczne grillowisko. Poczuj smak lata, delektując się grillowanymi specjałami w otoczeniu natury i wyjątkowej atmosfery!",
+    "button": "Dowiedz się więcej"
+  },
+  "portDetails": {
+    "title": "Port",
+    "description": "Latem zapraszamy również do Portu, malowniczo położonego nad rzeką Narew. To idealne miejsce, by zrelaksować się na słońcu, napić się aromatycznej kawy i delektować się pysznym jedzeniem z widokiem na wodę. Idealny sposób na letni odpoczynek!.",
+    "button": "Dowiedz się więcej"
+  },
+  "rooms": {
+    "title": "Nasze pokoje",
+    "description": "Nasz hotel mieści się w dwóch budynkach i oferuje 42 komfortowe pokoje, w tym jedno- i dwuosobowe, rodzinne studia oraz apartamenty. W budynku głównym znajduje się winda, a część pokoi posiada balkon z widokiem na ogród lub rzekę Narew. W budynku zewnętrznym dostępne są przestronne pokoje dwu-, trzy- i pięcioosobowe.",
+    "everyRoomHas": "Każdy pokój wyposażony jest w:",
+    "roomAmenities": {
+      "ac": "klimatyzację",
+      "tv": "telewizor z kanałami cyfrowymi i radiowymi",
+      "bathroom": "łazienkę z prysznicem, suszarką i zestawem kosmetyków",
+      "beverages": "zestaw do kawy i herbaty oraz wodę mineralną"
+    },
+    "chooseRoom": "Wybierz swój pokój",
+    "tabs": {
+      "all": "Wszystkie",
+      "standard": "Standardowe",
+      "family": "Rodzinne",
+      "apartment": "Apartamenty"
+    },
+    "standard": {
+      "name": "Pokój Standardowy",
+      "description": "Komfortowy pokój z widokiem na ogród, idealny dla par lub osób podróżujących służbowo.",
+      "price": "od 250 zł / noc",
+      "capacity": "1-2 osoby"
+    },
+    "family": {
+      "name": "Pokój Rodzinny",
+      "description": "Przestronny pokój zaprojektowany z myślą o rodzinach, z dodatkową przestrzenią i udogodnieniami dla dzieci.",
+      "price": "od 450 zł / noc",
+      "capacity": "2-4 osoby"
+    },
+    "apartment": {
+      "name": "Apartament",
+      "description": "Luksusowy apartament z oddzielną sypialnią, salonem i aneksem kuchennym, oferujący najwyższy standard pobytu i przestrzeń do życia.",
+      "price": "od 650 zł / noc",
+      "capacity": "2-5 osób"
+    },
+    "features": {
+      "doubleBed": "Łóżko podwójne",
+      "privateBathroom": "Prywatna łazienka",
+      "flatScreenTV": "TV z płaskim ekranem",
+      "freeWifi": "Bezpłatne Wi-Fi",
+      "airConditioning": "Klimatyzacja",
+      "familyBeds": "Łóżko podwójne i dwa pojedyncze",
+      "largeBathroom": "Duża łazienka z wanną",
+      "fridgeMicrowave": "Lodówka i mikrofalówka",
+      "loungeArea": "Strefa wypoczynkowa",
+      "kingSizeBed": "Oddzielna sypialnia z łóżkiem king-size",
+      "sofaBed": "Salon z rozkładaną sofą",
+      "kitchenette": "W pełni wyposażony aneks kuchenny",
+      "diningArea": "Jadalnia z miejscem dla 4 osób",
+      "luxuryBathroom": "Luksusowa łazienka z wanną i prysznicem",
+      "balcony": "Duży balkon lub taras",
+      "smartTV": "Smart TV i system audio",
+      "coffeeMachine": "Ekspres do kawy"
+    },
+    "gallery": {
+      "title": "Galeria zdjęć",
+      "image": "Zdjęcie",
+      "of": "z",
+      "viewAll": "Zobacz wszystkie"
+    },
+    "amenitiesTitle": "Udogodnienia:",
+    "details": "Szczegóły",
+    "bookNow": "Rezerwuj teraz"
+  },
+  "gastro": {
+    "tags": {
+      "traditional": "Tradycyjne",
+      "polish": "Polskie",
+      "local": "Lokalne składniki",
+      "seasonal": "Sezonowe",
+      "fresh": "Świeże",
+      "changing": "Zmieniające się",
+      "sweet": "Słodkie",
+      "homemade": "Domowe",
+      "artistic": "Artystyczne",
+      "kids": "Dla dzieci",
+      "fun": "Zabawne",
+      "healthy": "Zdrowe"
+    },
+    "specialties": {
+      "polish": {
+        "name": "Tradycyjne dania polskie",
+        "description": "Nasze menu oferuje klasyczne polskie dania przygotowane według tradycyjnych receptur z najwyższej jakości lokalnych składników. Każde danie to podróż przez bogatą historię polskiej kuchni.",
+        "price": "39-89 zł"
+      },
+      "seasonal": {
+        "name": "Menu sezonowe",
+        "description": "Nasze sezonowe menu zmienia się zgodnie z porami roku, wykorzystując najświeższe składniki dostępne w danym sezonie. Dzięki temu nasze dania zawsze zachwycają świeżością i intensywnością smaków.",
+        "price": "42-95 zł"
+      },
+      "desserts": {
+        "name": "Wyjątkowe desery",
+        "description": "Nasza cukiernia słynie z wyjątkowych deserów, które są prawdziwym dziełem sztuki. Każdy deser to połączenie doskonałego smaku, tekstury i estetyki.",
+        "price": "22-38 zł"
+      },
+      "kids": {
+        "name": "Dla dzieci",
+        "description": "Dla naszych najmłodszych gości przygotowaliśmy specjalne menu. Zdrowe i smaczne dania, które dzieci uwielbiają, przygotowane z najwyższej jakości składników.",
+        "price": "22-38 zł"
+      }
+    },
+    "tabs": {
+      "traditional": "Tradycyjne",
+      "seasonal": "Sezonowe",
+      "kids": "Dla dzieci",
+      "desserts": "Desery"
+    }
+  },
+  "spa": {
+    "title": "Spa & Wellness",
+    "description": "Witamy w naszym ekskluzywnym spa, gdzie harmonia ciała i umysłu jest naszym priorytetem. Oferujemy kompleksowe zabiegi wellness, relaksacyjne i upiększające, które zostały starannie dobrane, aby zapewnić naszym gościom najwyższy poziom odprężenia i regeneracji. Nasze spa to oaza spokoju, gdzie możesz uciec od codziennego stresu i zanurzyć się w atmosferze luksusu i relaksu.",
+    "description2": "Zapraszamy do nowoczesnej strefy Wellness. Dla wszystkich Gości przygotowaliśmy basen rekreacyjny, brodzik oraz jacuzzi. Dorośli mają do dyspozycji dwie sauny – fińską i Infrared oraz pokój relaksu z podgrzewaną leżanką, brodzikami do moczenia stóp przed saunowaniem oraz studnią lodową, dzięki której można ochłodzić ciało płatkami lodu.",
+    "wellnessTitle": "Wellness & Spa",
+    "wellnessSubtitle": "Kompleksowe zabiegi dla ciała i duszy",
+    "wellnessDescription": "Nasza strefa wellness oferuje szeroki wybór zabiegów, które pomogą Ci zadbać o ciało i umysł. Nasi doświadczeni terapeuci wykorzystują najwyższej jakości kosmetyki i techniki, aby zapewnić Ci niezapomniane doświadczenia i widoczne efekty.",
+    "downloadCatalog": "Pobierz katalog zabiegów",
+    "saltRoomTitle": "Grota Solna",
+    "saltRoomSubtitle": "Terapia solna dla zdrowia i relaksu",
+    "saltRoomDescription": "Nasza grota solna to wyjątkowe miejsce, gdzie możesz doświadczyć dobroczynnych właściwości soli himalajskiej. Mikroklimat panujący w grocie solnej wspomaga leczenie wielu dolegliwości układu oddechowego, wzmacnia odporność i działa relaksująco na cały organizm.",
+    "saltRoomBenefits": {
+      "respiratory": {
+        "title": "Wspomaganie układu oddechowego",
+        "description": "pomaga w leczeniu astmy, alergii i innych dolegliwości dróg oddechowych"
+      },
+      "immunity": {
+        "title": "Wzmocnienie odporności",
+        "description": "regularne sesje w grocie solnej wzmacniają naturalną odporność organizmu"
+      },
+      "stress": {
+        "title": "Relaks i redukcja stresu",
+        "description": "atmosfera groty solnej sprzyja głębokiemu odprężeniu i redukcji napięcia"
+      }
+    },
+    "saltRoomPrices": {
+      "individual": {
+        "title": "Sesja indywidualna",
+        "price": "60 zł / 45 min"
+      },
+      "family": {
+        "title": "Sesja rodzinna (do 4 osób)",
+        "price": "160 zł / 45 min"
+      },
+      "fivepack": {
+        "title": "Karnet 5 wejść",
+        "price": "250 zł"
+      }
+    },
+    "beautyTitle": "Salon Wizażu",
+    "beautySubtitle": "Profesjonalna pielęgnacja dłoni i paznokci",
+    "beautyDescription": "Nasz salon manicure oferuje kompleksową pielęgnację dłoni i paznokci. Wykorzystujemy najwyższej jakości produkty i najnowsze techniki, aby zapewnić Ci perfekcyjny manicure, który utrzyma się przez długi czas.",
+    "beautyServices": {
+      "classic": {
+        "title": "Manicure klasyczny",
+        "description": "Tradycyjny manicure z malowaniem paznokci lakierem klasycznym",
+        "price": "90 zł"
+      },
+      "hybrid": {
+        "title": "Manicure hybrydowy",
+        "description": "Trwały manicure z użyciem lakieru hybrydowego",
+        "price": "120 zł"
+      },
+      "japanese": {
+        "title": "Manicure japoński",
+        "description": "Odżywczy zabieg wzmacniający naturalne paznokcie",
+        "price": "110 zł"
+      },
+      "extension": {
+        "title": "Przedłużanie paznokci",
+        "description": "Profesjonalne przedłużanie paznokci metodą żelową",
+        "price": "od 180 zł"
+      }
+    },
+    "bookAppointment": "Umów wizytę",
+    "seeGallery": "Zobacz nasze realizacje",
+    "hoursTitle": "Godziny otwarcia i cennik",
+    "priceNote": "* Ceny mogą się różnić w zależności od wybranego zabiegu. Szczegółowy cennik dostępny w recepcji spa.",
+    "phoneReservation": "Rezerwacja telefoniczna",
+    "onlineReservation": "Rezerwacja online",
+    "treatments": {
+      "massage": {
+        "name": "Masaże relaksacyjne",
+        "description": "Szeroka gama masaży, które pomogą Ci się zrelaksować i odprężyć.",
+        "priceRange": "150 - 350 zł",
+        "duration": "30 - 90 min"
+      },
+      "face": {
+        "name": "Zabiegi na twarz",
+        "description": "Profesjonalne zabiegi pielęgnacyjne dla każdego rodzaju skóry.",
+        "priceRange": "180 - 450 zł",
+        "duration": "45 - 75 min"
+      },
+      "rituals": {
+        "name": "Rytuały spa",
+        "description": "Kompleksowe rytuały dla ciała i umysłu, inspirowane tradycjami z całego świata.",
+        "priceRange": "280 - 600 zł",
+        "duration": "90 - 120 min"
+      }
+    },
+    "services": {
+      "hotStones": {
+        "name": "Masaż gorącymi kamieniami",
+        "description": "Głęboko relaksujący masaż z wykorzystaniem gorących kamieni bazaltowych.",
+        "price": "od 220 zł",
+        "duration": "60 min"
+      },
+      "rejuvenation": {
+        "name": "Luksusowy zabieg odmładzający",
+        "description": "Intensywnie regenerujący zabieg z wykorzystaniem komórek macierzystych.",
+        "price": "od 380 zł",
+        "duration": "75 min"
+      },
+      "chocolate": {
+        "name": "Rytuał czekoladowy",
+        "description": "Odżywczy rytuał z wykorzystaniem naturalnej czekolady i masła shea.",
+        "price": "od 320 zł",
+        "duration": "90 min"
+      }
+    },
+    "hours": {
+      "title": {
+        "spa": "Strefa Spa",
+        "saltRoom": "Grota Solna",
+        "manicure": "Salon Manicure"
+      },
+      "weekdaysLabel": "Poniedziałek - Piątek",
+      "weekendsLabel": "Sobota - Niedziela",
+      "spa": {
+        "weekdays": "10:00 - 21:00",
+        "weekends": "09:00 - 22:00"
+      },
+      "saltRoom": {
+        "weekdays": "11:00 - 20:00",
+        "weekends": "10:00 - 21:00"
+      },
+      "manicure": {
+        "weekdays": "10:00 - 19:00",
+        "weekends": "09:00 - 18:00"
+      },
+      "prices": {
+        "spa": "od 80 zł / wejście",
+        "saltRoom": "od 60 zł / sesja",
+        "manicure": "od 90 zł / zabieg"
+      }
+    }
+  },
+  "events": {
+    "title": "Wesela i przyjęcia",
+    "description": "Zorganizuj niezapomniane wesele lub przyjęcie w naszym eleganckim obiekcie. Oferujemy przestronne sale, malowniczy ogród oraz wykwintne menu, które spełnią oczekiwania nawet najbardziej wymagających Gości. Nasz doświadczony zespół zadba o każdy szczegół, abyście mogli w pełni cieszyć się tym wyjątkowym dniem.",
+    "bookDate": "Zarezerwuj termin",
+    "downloadOffer": "Pobierz ofertę",
+    "venuesTitle": "Nasze przestrzenie",
+    "venuesDescription": "Oferujemy różnorodne przestrzenie, które możemy dostosować do Twoich potrzeb. Niezależnie od tego, czy planujesz kameralne przyjęcie, czy wystawne wesele, znajdziemy idealne rozwiązanie.",
+    "checkAvailability": "Sprawdź dostępność",
+    "availableDates": "Dostępne terminy",
+    "availabilityDescription": "Poniżej znajdziesz kalendarz z dostępnymi terminami na organizację wesela lub przyjęcia. Zielone daty oznaczają dostępne terminy. Wybierz datę, aby sprawdzić szczegóły lub zarezerwować termin.",
+    "selectedDate": "Wybrany termin",
+    "dateAvailable": "Ten termin jest dostępny! Skontaktuj się z nami, aby omówić szczegóły.",
+    "reserveDate": "Zarezerwuj termin",
+    "inquireDetails": "Zapytaj o szczegóły",
+    "galleryTitle": "Galeria",
+    "downloadOfferText": "Pobierz naszą szczegółową ofertę weselną, która zawiera pełne menu, pakiety cenowe oraz wszystkie dostępne opcje i usługi dodatkowe.",
+    "downloadWeddingOffer": "Pobierz ofertę weselną",
+    "downloadOfferForm": {
+      "title": "Pobierz ofertę weselną",
+      "description": "Wypełnij krótki formularz, aby otrzymać pełną ofertę weselną wraz z menu i cennikiem.",
+      "fullName": "Imię i nazwisko",
+      "email": "Email",
+      "phone": "Telefon",
+      "download": "Pobierz ofertę"
+    },
+    "venues": {
+      "ballroom": {
+        "name": "Sala Balowa",
+        "description": "Przestronna i elegancka przestrzeń idealna na wesela i większe przyjęcia. Oferuje nowoczesne udogodnienia w połączeniu z klasycznym wystrojem.",
+        "size": "350m²",
+        "features": {
+          "danceFloor": "Parkiet taneczny",
+          "stage": "Scena dla zespołu",
+          "soundSystem": "System nagłośnienia",
+          "airConditioning": "Klimatyzacja"
+        }
+      },
+      "garden": {
+        "name": "Ogród",
+        "description": "Malownicza przestrzeń ogrodowa idealna na letnie ceremonie i przyjęcia na świeżym powietrzu. Piękne naturalne otoczenie tworzy romantyczną atmosferę.",
+        "size": "500m²",
+        "features": {
+          "gazebo": "Altana",
+          "fountain": "Fontanna",
+          "decorativeLighting": "Oświetlenie dekoracyjne",
+          "ceremonySpace": "Miejsce na ceremonię"
+        }
+      },
+      "restaurant": {
+        "name": "Restauracja",
+        "description": "Kameralna przestrzeń z widokiem na rzekę, idealna na mniejsze przyjęcia i uroczystości rodzinne. Łączy komfort z wyśmienitą kuchnią.",
+        "size": "180m²",
+        "features": {
+          "riverView": "Widok na rzekę",
+          "bar": "Bar",
+          "cozyAtmosphere": "Przytulna atmosfera",
+          "terrace": "Taras"
+        }
+      }
+    },
+    "venueInfo": {
+      "maxGuests": "Maksymalna liczba gości",
+      "area": "Powierzchnia",
+      "amenities": "Udogodnienia",
+      "seeGallery": "Zobacz galerię",
+      "people": "osób"
+    },
+    "packages": {
+      "title": "Pakiety weselne",
+      "classic": {
+        "name": "Pakiet Klasyczny",
+        "description": "Menu 3-daniowe, napoje, dekoracje",
+        "price": "od 500 zł / os."
+      },
+      "premium": {
+        "name": "Pakiet Premium",
+        "description": "Menu 4-daniowe, open bar, dekoracje",
+        "price": "od 750 zł / os."
+      },
+      "luxury": {
+        "name": "Pakiet Luksusowy",
+        "description": "Menu 5-daniowe, open bar premium, dekoracje",
+        "price": "od 1,000 zł / os."
+      }
+    },
+    "services": {
+      "title": "Dodatkowe usługi",
+      "music": "DJ lub zespół muzyczny",
+      "photo": "Fotograf i kamerzysta",
+      "flowers": "Dekoracje kwiatowe",
+      "kids": "Animacje dla dzieci",
+      "fireworks": "Pokaz fajerwerków"
+    },
+    "gallery": {
+      "ballroom": {
+        "alt": "Elegancka sala weselna z okrągłymi stołami",
+        "title": "Sala Balowa"
+      },
+      "gardenCeremony": {
+        "alt": "Ceremonia ślubna w ogrodzie",
+        "title": "Ceremonia w Ogrodzie"
+      },
+      "tableDecor": {
+        "alt": "Dekoracje stołów weselnych",
+        "title": "Eleganckie Nakrycia"
+      },
+      "eveningParty": {
+        "alt": "Przyjęcie weselne wieczorem",
+        "title": "Wieczorne Przyjęcie"
+      },
+      "buffet": {
+        "alt": "Bufet z przekąskami",
+        "title": "Wyśmienite Menu"
+      },
+      "dessertTable": {
+        "alt": "Tort weselny",
+        "title": "Słodki Stół"
+      }
+    }
+  },
+  "business": {
+    "title": "Oferta dla Biznesu",
+    "description": "Oferujemy nowoczesne i w pełni wyposażone przestrzenie konferencyjne, które spełnią oczekiwania nawet najbardziej wymagających klientów biznesowych. Nasze sale konferencyjne są idealne na szkolenia, konferencje, spotkania zarządu i wydarzenia firmowe. Zapewniamy najwyższej jakości obsługę, nowoczesny sprzęt audiowizualny oraz elastyczne możliwości aranżacji przestrzeni.",
+    "downloadOffer": "Pobierz ofertę biznesową",
+    "checkAvailability": "Sprawdź dostępność",
+    "roomsTitle": "Nasze sale konferencyjne",
+    "roomsDescription": "Oferujemy różnorodne przestrzenie konferencyjne, które możemy dostosować do Twoich potrzeb. Niezależnie od tego, czy planujesz małe spotkanie zarządu, czy dużą konferencję, znajdziemy idealne rozwiązanie.",
+    "arrangementTitle": "Możliwości aranżacji",
+    "arrangementDescription": "Nasze sale konferencyjne można aranżować na wiele sposobów, aby dostosować je do charakteru Twojego wydarzenia. Poniżej przedstawiamy najpopularniejsze układy i ich pojemność dla wybranej sali.",
+    "downloadPlans": "Pobierz plany aranżacji",
+    "availabilityTitle": "Sprawdź dostępność",
+    "availabilityDescription": "Poniżej znajdziesz kalendarz z dostępnymi terminami dla wybranej sali konferencyjnej. Zielone daty oznaczają dostępne terminy. Wybierz datę, aby sprawdzić szczegóły lub zarezerwować salę.",
+    "selectedDate": "Wybrany termin",
+    "roomAvailable": "Sala jest dostępna w tym terminie!",
+    "reserveRoom": "Zarezerwuj salę",
+    "inquireDetails": "Zapytaj o szczegóły",
+    "downloadForm": {
+      "title": "Pobierz ofertę biznesową",
+      "description": "Wypełnij krótki formularz, aby otrzymać pełną ofertę biznesową wraz z cennikiem i możliwościami aranżacji.",
+      "fullName": "Imię i nazwisko",
+      "company": "Firma",
+      "email": "Email",
+      "phone": "Telefon",
+      "download": "Pobierz ofertę"
+    },
+    "rooms": {
+      "grand": {
+        "name": "Grand Hall",
+        "size": "680m²",
+        "description": "Nasza największa sala konferencyjna o powierzchni 680m² to idealne miejsce na duże konferencje, kongresy, gale i wydarzenia firmowe. Sala może być aranżowana na wiele sposobów, a także dzielona na 3 mniejsze przestrzenie.",
+        "features": {
+          "audioVisual": "Najnowocześniejszy system audio-wizualny",
+          "wifi": "Szybkie WiFi (1 Gb/s)",
+          "screens": "4 ekrany projekcyjne 4K",
+          "soundSystem": "System nagłośnienia Bose",
+          "divisible": "Możliwość podziału na 3 mniejsze sale",
+          "climate": "Klimatyzacja z indywidualną regulacją",
+          "lighting": "Oświetlenie LED z regulacją natężenia",
+          "accessible": "Dostęp dla osób niepełnosprawnych",
+          "terrace": "Bezpośredni dostęp do tarasu",
+          "reception": "Dedykowana recepcja"
+        }
+      },
+      "executive": {
+        "name": "Exec Room",
+        "size": "120m²",
+        "description": "Elegancka sala konferencyjna zaprojektowana z myślą o spotkaniach zarządu, prezentacjach dla klientów i mniejszych szkoleniach. Wyposażona w najnowocześniejsze technologie i komfortowe meble.",
+        "features": {
+          "touchScreen": "85-calowy interaktywny ekran dotykowy",
+          "wifi": "Szybkie WiFi (1 Gb/s)",
+          "videoConference": "System wideokonferencyjny",
+          "soundSystem": "Nagłośnienie Bose",
+          "climate": "Klimatyzacja",
+          "lighting": "Oświetlenie LED",
+          "acoustic": "Wyciszenie akustyczne premium",
+          "chairs": "Ergonomiczne fotele"
+        }
+      },
+      "business": {
+        "name": "Business Center",
+        "size": "90m²",
+        "description": "Funkcjonalna sala konferencyjna idealna na szkolenia, warsztaty i spotkania biznesowe. Jasna i przestronna, z dostępem do tarasu, co umożliwia organizację przerw kawowych na świeżym powietrzu.",
+        "features": {
+          "screen": "75-calowy ekran 4K",
+          "wifi": "Szybkie WiFi (1 Gb/s)",
+          "videoConference": "System wideokonferencyjny",
+          "soundSystem": "Nagłośnienie",
+          "climate": "Klimatyzacja",
+          "naturalLight": "Naturalne światło",
+          "terrace": "Dostęp do tarasu"
+        }
+      }
+    },
+    "arrangements": {
+      "icons": {
+        "theater": "kinowy",
+        "classroom": "szkolny",
+        "boardroom": "zarząd",
+        "banquet": "bankietowy",
+        "ushape": "kształt-u"
+      },
+      "theater": {
+        "description": "Układ kinowy, idealny na prezentacje i wykłady"
+      },
+      "classroom": {
+        "description": "Układ szkolny ze stołami, idealny na szkolenia"
+      },
+      "boardroom": {
+        "description": "Układ z jednym dużym stołem, idealny na spotkania zarządu"
+      },
+      "banquet": {
+        "description": "Układ bankietowy z okrągłymi stołami"
+      },
+      "ushape": {
+        "description": "Układ w kształcie litery U, idealny na dyskusje"
+      },
+      "layoutTitle": "Pojemność w różnych układach:",
+      "people": "osób"
+    },
+    "roomInfo": {
+      "screens": "Ekrany",
+      "screensInfo": "4K Ultra HD",
+      "wifi": "WiFi",
+      "wifiInfo": "1 Gb/s",
+      "audio": "Audio",
+      "audioInfo": "System Bose",
+      "capacity": "Pojemność",
+      "capacityInfo": "do",
+      "lighting": "Oświetlenie",
+      "lightingInfo": "LED regulowane",
+      "catering": "Catering",
+      "cateringInfo": "Dostępny",
+      "equipment": "Wyposażenie i udogodnienia:"
+    },
+    "packages": {
+      "title": "Pakiety konferencyjne",
+      "basic": {
+        "name": "Pakiet podstawowy",
+        "description": "Sala, sprzęt AV, woda, przerwa kawowa",
+        "price": "od 120 zł / os."
+      },
+      "standard": {
+        "name": "Pakiet biznes",
+        "description": "Sala, sprzęt AV, 2 przerwy kawowe, lunch",
+        "price": "od 180 zł / os."
+      },
+      "premium": {
+        "name": "Pakiet premium",
+        "description": "Sala, sprzęt AV, całodzienny catering, obsługa techniczna",
+        "price": "od 250 zł / os."
+      }
+    },
+    "rentals": {
+      "title": "Wynajem godzinowy",
+      "grand": {
+        "price": "od 1200 zł / godz."
+      },
+      "executive": {
+        "price": "od 600 zł / godz."
+      },
+      "business": {
+        "price": "od 400 zł / godz."
+      },
+      "note": "* Ceny mogą się różnić w zależności od sezonu i dodatkowych usług. Przy wynajmie całodniowym oferujemy atrakcyjne rabaty."
+    }
+  }
+}
+
