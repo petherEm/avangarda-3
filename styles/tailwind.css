@@ -70,10 +70,22 @@
     background: #d01e74;
   }
 
+
   /* Firefox */
   * {
     scrollbar-width: thin;
     scrollbar-color: #f42388 transparent;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 

@@ -403,11 +403,11 @@ export const CONFERENCE_ROOMS: ConferenceRoom[] = [
     nameKey: "business.rooms.grand.name",
     sizeKey: "business.rooms.grand.size",
     capacity: {
-      theater: 600,
-      classroom: 350,
+      theater: 540,
+      classroom: 400,
       boardroom: 100,
-      banquet: 400,
-      ushape: 120,
+      banquet: 500,
+      ushape: 0,
     },
     featuresKeys: [
       "business.rooms.grand.features.audioVisual",
@@ -471,6 +471,29 @@ export const CONFERENCE_ROOMS: ConferenceRoom[] = [
     descriptionKey: "business.rooms.business.description",
     image: "/conference/conf-03.webp",
   },
+  {
+    id: "vip",
+    nameKey: "business.rooms.vip.name",
+    sizeKey: "business.rooms.vip.size",
+    capacity: {
+      theater: 15,
+      classroom: 12,
+      boardroom: 12,
+      banquet: 12,
+      ushape: 10,
+    },
+    featuresKeys: [
+      "business.rooms.vip.features.touchScreen",
+      "business.rooms.vip.features.wifi",
+      "business.rooms.vip.features.videoConference",
+      "business.rooms.vip.features.premium",
+      "business.rooms.vip.features.privacy",
+      "business.rooms.vip.features.catering",
+      "business.rooms.vip.features.climate"
+    ],
+    descriptionKey: "business.rooms.vip.description",
+    image: "/conference/conf-02.webp",
+  },
 ];
 
 export const ROOM_ARRANGEMENTS: RoomArrangement[] = [
@@ -531,5 +554,9 @@ export const ROOM_RENTALS: RoomRental[] = [
   {
     roomId: "business",
     priceKey: "business.rentals.business.price"
+  },
+  {
+    roomId: "vip",
+    priceKey: "business.rentals.vip.price"
   }
 ];

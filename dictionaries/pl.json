@@ -486,13 +486,13 @@
       "grand": {
         "name": "Grand Hall",
         "size": "680m²",
-        "description": "Nasza największa sala konferencyjna o powierzchni 680m² to idealne miejsce na duże konferencje, kongresy, gale i wydarzenia firmowe. Sala może być aranżowana na wiele sposobów, a także dzielona na 3 mniejsze przestrzenie.",
+        "description": "Nasza największa sala konferencyjna o powierzchni 680m² to idealne miejsce na duże konferencje, kongresy, gale i wydarzenia firmowe. Sala może być aranżowana na wiele sposobów, a także dzielona na 2 mniejsze przestrzenie po 340m².",
         "features": {
           "audioVisual": "Najnowocześniejszy system audio-wizualny",
           "wifi": "Szybkie WiFi (1 Gb/s)",
           "screens": "4 ekrany projekcyjne 4K",
           "soundSystem": "System nagłośnienia Bose",
-          "divisible": "Możliwość podziału na 3 mniejsze sale",
+          "divisible": "Możliwość podziału na 2 mniejsze sale",
           "climate": "Klimatyzacja z indywidualną regulacją",
           "lighting": "Oświetlenie LED z regulacją natężenia",
           "accessible": "Dostęp dla osób niepełnosprawnych",
@@ -503,7 +503,7 @@
       "executive": {
         "name": "Exec Room",
         "size": "120m²",
-        "description": "Elegancka sala konferencyjna zaprojektowana z myślą o spotkaniach zarządu, prezentacjach dla klientów i mniejszych szkoleniach. Wyposażona w najnowocześniejsze technologie i komfortowe meble.",
+        "description": "Elegancka sala konferencyjna (Kominkowa) zaprojektowana z myślą o spotkaniach zarządu, prezentacjach dla klientów i mniejszych szkoleniach. Wyposażona w najnowocześniejsze technologie i komfortowe meble.",
         "features": {
           "touchScreen": "85-calowy interaktywny ekran dotykowy",
           "wifi": "Szybkie WiFi (1 Gb/s)",
@@ -527,6 +527,20 @@
           "climate": "Klimatyzacja",
           "naturalLight": "Naturalne światło",
           "terrace": "Dostęp do tarasu"
+        }
+      },
+      "vip": {
+        "name": "Sala VIP",
+        "size": "20m²",
+        "description": "Kameralna i luksusowa przestrzeń zaprojektowana z myślą o spotkaniach na wysokim szczeblu i ekskluzywnych rozmowach biznesowych. Wykończenia premium i najnowocześniejsza technologia zapewniają doskonałe warunki do podejmowania ważnych decyzji.",
+        "features": {
+          "touchScreen": "65-calowy interaktywny wyświetlacz 4K",
+          "wifi": "Dedykowane szybkie WiFi (1 Gb/s)",
+          "videoConference": "Zaawansowany system wideokonferencyjny",
+          "premium": "Meble i wykończenia premium",
+          "privacy": "Wzmocniona izolacja akustyczna",
+          "catering": "Dedykowana obsługa cateringowa",
+          "climate": "Indywidualna kontrola klimatu"
         }
       }
     },
@@ -599,6 +613,9 @@
       },
       "business": {
         "price": "od 400 zł / godz."
+      },
+      "vip": {
+        "price": "od 350 zł / godz."
       },
       "note": "* Ceny mogą się różnić w zależności od sezonu i dodatkowych usług. Przy wynajmie całodniowym oferujemy atrakcyjne rabaty."
     }

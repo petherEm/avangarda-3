@@ -487,13 +487,13 @@
       "grand": {
         "name": "Grand Hall",
         "size": "680m²",
-        "description": "Our largest conference room with an area of 680m² is an ideal place for large conferences, congresses, galas, and corporate events. The room can be arranged in many ways and divided into 3 smaller spaces.",
+        "description": "Our largest conference room with an area of 680m² is an ideal place for large conferences, congresses, galas, and corporate events. The room can be arranged in many ways and divided into 3 smaller spaces (340 m² each).",
         "features": {
           "audioVisual": "State-of-the-art audiovisual system",
           "wifi": "High-speed WiFi (1 Gb/s)",
           "screens": "4 projection screens 4K",
           "soundSystem": "Bose sound system",
-          "divisible": "Can be divided into 3 smaller rooms",
+          "divisible": "Can be divided into 2 smaller rooms",
           "climate": "Air conditioning with individual control",
           "lighting": "LED lighting with adjustable intensity",
           "accessible": "Wheelchair accessible",
@@ -504,7 +504,7 @@
       "executive": {
         "name": "Exec Room",
         "size": "120m²",
-        "description": "An elegant conference room designed for board meetings, client presentations, and smaller trainings. Equipped with the latest technologies and comfortable furniture.",
+        "description": "An elegant conference room (Kominkowa) designed for board meetings, client presentations, and smaller trainings. Equipped with the latest technologies and comfortable furniture.",
         "features": {
           "touchScreen": "85-inch interactive touch screen",
           "wifi": "High-speed WiFi (1 Gb/s)",
@@ -528,6 +528,20 @@
           "climate": "Air conditioning",
           "naturalLight": "Natural daylight",
           "terrace": "Terrace access"
+        }
+      },
+      "vip": {
+        "name": "VIP Room",
+        "size": "20m²",
+        "description": "An intimate and luxurious space designed for high-level meetings and exclusive business discussions. Premium finishes and state-of-the-art technology ensure a perfect environment for important decision-making.",
+        "features": {
+          "touchScreen": "65-inch 4K interactive display",
+          "wifi": "Dedicated high-speed WiFi (1 Gb/s)",
+          "videoConference": "Advanced video conferencing system",
+          "premium": "Premium furniture and finishes",
+          "privacy": "Enhanced sound insulation for privacy",
+          "catering": "Dedicated catering service",
+          "climate": "Individual climate control"
         }
       }
     },
@@ -600,6 +614,9 @@
       },
       "business": {
         "price": "from 400 PLN / hour"
+      },
+      "vip": {
+        "price": "from 350 PLN / hour"
       },
       "note": "* Prices may vary depending on the season and additional services. We offer attractive discounts for full-day rentals."
     }

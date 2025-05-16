@@ -323,6 +323,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                         !isDateAvailable(date) || date < new Date()
                       }
                       fromDate={new Date()}
+                      hideMonthNavigation={true}
                     />
                   </div>
 
@@ -346,6 +347,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                         !isDateAvailable(date) || date < new Date()
                       }
                       fromDate={new Date()}
+                      hideMonthNavigation={true}
                     />
                   </div>
                 </div>

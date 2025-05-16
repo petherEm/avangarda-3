@@ -25,9 +25,7 @@ export default async function BusinessMainPage({
       <AnimateOnScroll>
         <BusinessIntro dict={dict} lang={lang} />
       </AnimateOnScroll>
-      <AnimateOnScroll>
-        <WorkInProgress dict={dict} lang={lang} />
-      </AnimateOnScroll>
+
       <AnimateOnScroll>
         <ClubCoola dict={dict} lang={lang} />
       </AnimateOnScroll>

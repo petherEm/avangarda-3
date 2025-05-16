@@ -23,13 +23,13 @@ import {
   Wifi,
   Monitor,
   Coffee,
-  Maximize2,
   Layout,
   Mic,
   Lightbulb,
   Clock,
   ChevronLeft,
   ChevronRight,
+  Presentation,
 } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
@@ -192,7 +192,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                     {t("business.downloadOffer")}
                   </Button>
                 </DialogTrigger>
-                <DialogContent className="sm:max-w-md bg-white">
+                <DialogContent className="sm:max-w-md bg-white rounded-none">
                   <DialogHeader>
                     <DialogTitle>
                       {t("business.downloadForm.title")}
@@ -208,7 +208,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                       </label>
                       <input
                         id="name"
-                        className="col-span-3 flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
+                        className="col-span-3 flex h-10 w-full border border-input bg-background px-3 py-2 text-sm"
                       />
                     </div>
                     <div className="grid grid-cols-4 items-center gap-4">
@@ -220,7 +220,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                       </label>
                       <input
                         id="company"
-                        className="col-span-3 flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
+                        className="col-span-3 flex h-10 w-full border border-input bg-background px-3 py-2 text-sm"
                       />
                     </div>
                     <div className="grid grid-cols-4 items-center gap-4">
@@ -230,7 +230,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                       <input
                         id="email"
                         type="email"
-                        className="col-span-3 flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
+                        className="col-span-3 flex h-10 w-full border border-input bg-background px-3 py-2 text-sm"
                       />
                     </div>
                     <div className="grid grid-cols-4 items-center gap-4">
@@ -240,7 +240,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                       <input
                         id="phone"
                         type="tel"
-                        className="col-span-3 flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm"
+                        className="col-span-3 flex h-10 w-full border border-input bg-background px-3 py-2 text-sm"
                       />
                     </div>
                   </div>
@@ -262,7 +262,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="relative aspect-video w-full overflow-hidden rounded-xl"
+            className="relative aspect-video w-full overflow-hidden"
           >
             <Image
               src="/conference/conf-03.webp"
@@ -281,7 +281,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
           className="mb-20"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
-            <Maximize2 className="h-7 w-7 text-blue-600" />
+            <Presentation className="h-7 w-7 text-avangarda" />
             <h2 className="text-3xl font-semibold text-center">
               {t("business.roomsTitle")}
             </h2>
@@ -296,12 +296,12 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
             className="w-full"
             onValueChange={setSelectedRoom}
           >
-            <TabsList className="grid w-full max-w-md mx-auto grid-cols-3 mb-8 bg-white rounded-lg p-1">
+            <TabsList className="w-full max-w-xl mx-auto mb-8 bg-white p-1 flex overflow-x-auto no-scrollbar">
               {CONFERENCE_ROOMS.map((room) => (
                 <TabsTrigger
                   key={room.id}
                   value={room.id}
-                  className="data-[state=active]:bg-transparent data-[state=active]:text-blue-600 data-[state=active]:border-b-2 data-[state=active]:border-blue-500 rounded-none"
+                  className="flex-1 min-w-[100px] data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda/90 rounded-none whitespace-nowrap px-2"
                 >
                   {t(room.nameKey)}
                 </TabsTrigger>
@@ -317,7 +317,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                         <h3 className="text-2xl font-semibold">
                           {t(room.nameKey)}
                         </h3>
-                        <Badge className="bg-blue-100 text-blue-800">
+                        <Badge className="bg-pink-100 text-avangarda rounded-none">
                           {t(room.sizeKey)}
                         </Badge>
                       </div>
@@ -325,8 +325,8 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                     </div>
 
                     <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
-                      <div className="bg-blue-50 p-4 rounded-lg text-center">
-                        <Monitor className="h-5 w-5 mx-auto mb-1 text-blue-600" />
+                      <div className="bg-pink-50 p-4 text-center">
+                        <Monitor className="h-5 w-5 mx-auto mb-1 text-avangarda" />
                         <p className="text-sm font-medium">
                           {t("business.roomInfo.screens")}
                         </p>
@@ -335,8 +335,8 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                         </p>
                       </div>
 
-                      <div className="bg-blue-50 p-4 rounded-lg text-center">
-                        <Wifi className="h-5 w-5 mx-auto mb-1 text-blue-600" />
+                      <div className="bg-pink-50 p-4 text-center">
+                        <Wifi className="h-5 w-5 mx-auto mb-1 text-avangarda" />
                         <p className="text-sm font-medium">
                           {t("business.roomInfo.wifi")}
                         </p>
@@ -345,8 +345,8 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                         </p>
                       </div>
 
-                      <div className="bg-blue-50 p-4 rounded-lg text-center">
-                        <Mic className="h-5 w-5 mx-auto mb-1 text-blue-600" />
+                      <div className="bg-pink-50 p-4 text-center">
+                        <Mic className="h-5 w-5 mx-auto mb-1 text-avangarda" />
                         <p className="text-sm font-medium">
                           {t("business.roomInfo.audio")}
                         </p>
@@ -355,8 +355,8 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                         </p>
                       </div>
 
-                      <div className="bg-blue-50 p-4 rounded-lg text-center">
-                        <Users className="h-5 w-5 mx-auto mb-1 text-blue-600" />
+                      <div className="bg-pink-50 p-4 text-center">
+                        <Users className="h-5 w-5 mx-auto mb-1 text-avangarda" />
                         <p className="text-sm font-medium">
                           {t("business.roomInfo.capacity")}
                         </p>
@@ -367,8 +367,8 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                         </p>
                       </div>
 
-                      <div className="bg-blue-50 p-4 rounded-lg text-center">
-                        <Lightbulb className="h-5 w-5 mx-auto mb-1 text-blue-600" />
+                      <div className="bg-pink-50 p-4 text-center">
+                        <Lightbulb className="h-5 w-5 mx-auto mb-1 text-avangarda" />
                         <p className="text-sm font-medium">
                           {t("business.roomInfo.lighting")}
                         </p>
@@ -377,8 +377,8 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                         </p>
                       </div>
 
-                      <div className="bg-blue-50 p-4 rounded-lg text-center">
-                        <Coffee className="h-5 w-5 mx-auto mb-1 text-blue-600" />
+                      <div className="bg-pink-50 p-4 text-center">
+                        <Coffee className="h-5 w-5 mx-auto mb-1 text-avangarda" />
                         <p className="text-sm font-medium">
                           {t("business.roomInfo.catering")}
                         </p>
@@ -395,7 +395,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                       <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                         {room.featuresKeys.map((featureKey, i) => (
                           <li key={i} className="flex items-center gap-2">
-                            <div className="h-1.5 w-1.5 rounded-full bg-blue-500"></div>
+                            <div className="h-1.5 w-1.5 rounded-full bg-avangarda"></div>
                             <span className="text-sm">{t(featureKey)}</span>
                           </li>
                         ))}
@@ -404,7 +404,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                   </div>
 
                   <div className="space-y-6">
-                    <div className="relative aspect-[4/3] w-full overflow-hidden rounded-xl">
+                    <div className="relative aspect-[4/3] w-full overflow-hidden">
                       <Image
                         src={room.image || "/placeholder.svg"}
                         alt={t(room.nameKey)}
@@ -413,7 +413,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                       />
                     </div>
 
-                    <div className="bg-gray-50 p-4 rounded-lg">
+                    <div className="bg-gray-50 p-4">
                       <h4 className="font-medium mb-3">
                         {t("business.arrangements.layoutTitle")}
                       </h4>
@@ -422,10 +422,10 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                           ([layout, capacity]) => (
                             <div
                               key={layout}
-                              className={`p-3 rounded-lg text-center cursor-pointer transition-all ${
+                              className={`p-3 text-center cursor-pointer transition-all ${
                                 selectedArrangement === layout
-                                  ? "bg-blue-100 border-2 border-blue-300"
-                                  : "bg-white border border-gray-200 hover:border-blue-200"
+                                  ? "bg-pink-100 border-2 border-pink-300"
+                                  : "bg-white border border-gray-200 hover:border-avangarda"
                               }`}
                               onClick={() => setSelectedArrangement(layout)}
                             >
@@ -455,10 +455,10 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-20 bg-gray-50 rounded-xl p-8"
+          className="mb-20 bg-gray-50 p-8"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
-            <Layout className="h-7 w-7 text-blue-600" />
+            <Layout className="h-7 w-7 text-avangarda" />
             <h2 className="text-3xl font-semibold text-center">
               {t("business.arrangementTitle")}
             </h2>
@@ -472,9 +472,9 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
             {ROOM_ARRANGEMENTS.map((arrangement) => (
               <Card
                 key={arrangement.type}
-                className={`cursor-pointer transition-all ${
+                className={`cursor-pointer transition-all rounded-none ${
                   selectedArrangement === arrangement.type
-                    ? "border-2 border-blue-400"
+                    ? "border-2 border-avangarda"
                     : ""
                 }`}
                 onClick={() => setSelectedArrangement(arrangement.type)}
@@ -500,7 +500,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
             ))}
           </div>
 
-          <div className="relative aspect-[21/9] w-full overflow-hidden rounded-xl mb-6">
+          <div className="relative aspect-[21/9] w-full overflow-hidden mb-6">
             <Image
               src="/conference/conf-03.webp"
               alt={`${t(`business.arrangements.icons.${selectedArrangement}`)}`}
@@ -525,7 +525,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
           className="mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
-            <CalendarIcon className="h-7 w-7 text-blue-600" />
+            <CalendarIcon className="h-7 w-7 text-avangarda" />
             <h2 className="text-3xl font-semibold text-center">
               {t("business.availabilityTitle")}
             </h2>
@@ -539,7 +539,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
               <p className="mb-6">{t("business.availabilityDescription")}</p>
 
               {/* Two-month calendar view */}
-              <div className="bg-white p-4 rounded-lg shadow-sm mb-6">
+              <div className="bg-white p-4 shadow-sm mb-6">
                 <div className="flex justify-between items-center mb-4">
                   <Button variant="outline" size="sm" onClick={previousMonth}>
                     <ChevronLeft className="h-4 w-4" />
@@ -577,6 +577,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                         !isDateAvailable(date) || date < new Date()
                       }
                       fromDate={new Date()}
+                      hideMonthNavigation={true}
                     />
                   </div>
 
@@ -600,13 +601,14 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                         !isDateAvailable(date) || date < new Date()
                       }
                       fromDate={new Date()}
+                      hideMonthNavigation={true}
                     />
                   </div>
                 </div>
               </div>
 
               {date && (
-                <div className="bg-blue-50 p-4 rounded-lg">
+                <div className="bg-pink-50 p-4">
                   <h4 className="font-medium mb-2">
                     {t("business.selectedDate")}:{" "}
                     {date.toLocaleDateString(lang === "pl" ? "pl-PL" : "en-US")}
@@ -623,9 +625,9 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
             </div>
 
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="bg-white p-6 shadow-sm">
                 <h3 className="text-xl font-medium mb-4 flex items-center gap-2">
-                  <Coffee className="h-5 w-5 text-blue-600" />
+                  <Coffee className="h-5 w-5 text-avangarda" />
                   {t("business.packages.title")}
                 </h3>
                 <div className="space-y-4">
@@ -648,9 +650,9 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
                 </div>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-sm">
+              <div className="bg-white p-6 shadow-sm">
                 <h3 className="text-xl font-medium mb-4 flex items-center gap-2">
-                  <Clock className="h-5 w-5 text-blue-600" />
+                  <Clock className="h-5 w-5 text-avangarda" />
                   {t("business.rentals.title")}
                 </h3>
                 <div className="space-y-4">
