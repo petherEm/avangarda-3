@@ -7,30 +7,16 @@ export default function VideoPlayer() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
 
-  // Add visual loading indicator for debugging
-  const [loadingProgress, setLoadingProgress] = useState(0);
-
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
-
-    // Handle loading progress
-    const handleProgress = () => {
-      if (video.buffered.length > 0) {
-        const bufferedEnd = video.buffered.end(0);
-        const duration = video.duration;
-        const progress = Math.round((bufferedEnd / duration) * 100);
-        setLoadingProgress(progress);
-      }
-    };
 
     // Handle video readiness
     const handleCanPlay = () => {
       setVideoLoaded(true);
     };
 
-    // Add all the event listeners
-    video.addEventListener("progress", handleProgress);
+    // Add event listeners
     video.addEventListener("canplay", handleCanPlay);
     video.load(); // Explicitly load the video
 
@@ -43,8 +29,7 @@ export default function VideoPlayer() {
     });
 
     return () => {
-      // Clean up all event listeners
-      video.removeEventListener("progress", handleProgress);
+      // Clean up event listeners
       video.removeEventListener("canplay", handleCanPlay);
     };
   }, []);
@@ -54,11 +39,6 @@ export default function VideoPlayer() {
       {!videoLoaded && (
         <div className="absolute inset-0 z-10">
           <HeroLoading />
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="bg-white/20 backdrop-blur-sm rounded-full px-6 py-3 text-white">
-              Loading video: {loadingProgress}%
-            </div>
-          </div>
         </div>
       )}
       <video
@@ -68,7 +48,10 @@ export default function VideoPlayer() {
         muted
         playsInline
         className="absolute inset-0 h-full w-full object-cover"
-        style={{ opacity: videoLoaded ? 1 : 0 }}
+        style={{
+          opacity: videoLoaded ? 1 : 0,
+          transition: "opacity 0.5s ease-in-out",
+        }}
         preload="auto"
       >
         <source
