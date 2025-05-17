@@ -1,7 +1,5 @@
-import AnimateOnScroll from "@/components/animate-on-scroll";
 import SpaHero from "@/components/modules/Spa/SpaHero";
 import SpaIntro from "@/components/modules/Spa/SpaIntro";
-import WorkInProgress from "@/components/work-in-progress";
 import { getDictionary } from "@/lib/dictionary";
 
 export default async function SpaMainPage({
@@ -15,12 +13,8 @@ export default async function SpaMainPage({
   return (
     <>
       <SpaHero />
-      <AnimateOnScroll>
-        <SpaIntro dict={dict} lang={lang} />
-      </AnimateOnScroll>
-      <AnimateOnScroll>
-        <WorkInProgress dict={dict} lang={lang} />
-      </AnimateOnScroll>
+
+      <SpaIntro dict={dict} lang={lang} />
     </>
   );
 }

@@ -1,19 +1,16 @@
-import { Suspense } from "react";
+import { lazy, Suspense } from "react";
 import { Container } from "../../container";
 import HeroLoading from "./loading";
 
-// Using async component for better streaming support
-const VideoPlayer = (async () => {
-  // Add a small delay to ensure smooth transition
-  await new Promise((resolve) => setTimeout(resolve, 100));
-  const VideoComponent = (await import("../Spa/video-player")).default;
-  return <VideoComponent />;
-})();
+// Use standard React lazy loading
+const VideoPlayer = lazy(() => import("./video-player"));
 
 export default function SpaHero() {
   return (
     <Container className="relative h-screen w-full overflow-hidden">
-      <Suspense fallback={<HeroLoading />}>{VideoPlayer}</Suspense>
+      <Suspense fallback={<HeroLoading />}>
+        <VideoPlayer />
+      </Suspense>
       <div className="absolute inset-0 bg-black/40 pointer-events-none" />
     </Container>
   );

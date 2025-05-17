@@ -9,7 +9,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
-import { SPECIALTIES_DATA, Specialty } from "@/constants";
+import { SPECIALTIES_DATA } from "@/constants";
 
 // Helper function to get nested dictionary values using dot notation
 const getNestedValue = (obj: any, path: string) => {
@@ -34,7 +34,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
     },
     {
       src: "/restaurant/rest-10.jpg",
-      alt: "Taras restauracji z widokiem",
+      alt: "Eleganckie wnętrze restauracji 2",
     },
     {
       src: "/restaurant/rest-03.jpg",
@@ -47,7 +47,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
   ];
 
   return (
-    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-[#404042] lg:py-20">
+    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
@@ -76,7 +76,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="space-y-8 bg-gray-50 p-6"
+            className="space-y-8 bg-pink-50 p-6"
           >
             <div className="grid grid-cols-2 gap-8">
               <div>
@@ -104,7 +104,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
               </Link>
 
               <div className="flex items-center gap-2 text-lg">
-                <Phone className="w-5 h-5 text-pink-500" />
+                <Phone className="w-5 h-5 text-avangarda" />
                 <Link href="#">{t("diningDetails.phone")}</Link>
               </div>
             </div>
@@ -137,7 +137,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
                 key={index}
                 className={`relative aspect-[4/3] cursor-pointer overflow-hidden border-2 ${
                   activeImage === index
-                    ? "border-pink-500"
+                    ? "border-avangarda"
                     : "border-transparent"
                 }`}
                 onClick={() => setActiveImage(index)}
@@ -161,7 +161,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
           className="mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
-            <ChefHat className="h-8 w-8 text-pink-500" />
+            <ChefHat className="h-8 w-8 text-avangarda" />
             <h2 className="text-3xl font-semibold text-center">
               {t("diningDetails.specialtiesTitle")}
             </h2>
@@ -175,26 +175,26 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-4 mb-8 bg-white rounded-lg p-1">
               <TabsTrigger
                 value="polish"
-                className="data-[state=active]:bg-transparent data-[state=active]:text-pink-600 data-[state=active]:border-b-2 data-[state=active]:border-pink-500 rounded-none"
+                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
               >
                 {t("gastro.tabs.traditional")}
               </TabsTrigger>
 
               <TabsTrigger
                 value="seasonal"
-                className="data-[state=active]:bg-transparent data-[state=active]:text-pink-600 data-[state=active]:border-b-2 data-[state=active]:border-pink-500 rounded-none"
+                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
               >
                 {t("gastro.tabs.seasonal")}
               </TabsTrigger>
               <TabsTrigger
                 value="kids"
-                className="data-[state=active]:bg-transparent data-[state=active]:text-pink-600 data-[state=active]:border-b-2 data-[state=active]:border-pink-500 rounded-none"
+                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
               >
                 {t("gastro.tabs.kids")}
               </TabsTrigger>
               <TabsTrigger
                 value="desserts"
-                className="data-[state=active]:bg-transparent data-[state=active]:text-pink-600 data-[state=active]:border-b-2 data-[state=active]:border-pink-500 rounded-none"
+                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
               >
                 {t("gastro.tabs.desserts")}
               </TabsTrigger>
@@ -226,7 +226,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
                         <Badge
                           key={index}
                           variant="outline"
-                          className="bg-pink-50"
+                          className="bg-pink-50 border-none"
                         >
                           {t(tag)}
                         </Badge>
@@ -240,7 +240,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
                     {specialty.priceKey && (
                       <p className="text-lg font-medium">
                         {t("diningDetails.priceRange")}{" "}
-                        <span className="text-pink-600">
+                        <span className="text-avangarda">
                           {t(specialty.priceKey)}
                         </span>
                       </p>
@@ -248,7 +248,11 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
 
                     <div className="pt-4">
                       <Link href={`/${lang}/menu#${specialty.id}`}>
-                        <Button className="mt-2">
+                        <Button
+                          className="mt-2 w-fit transition-all hover:scale-105 active:scale-95"
+                          size="lg"
+                          variant="secondary"
+                        >
                           <Utensils className="mr-2 h-4 w-4" />
                           {t("diningDetails.seeInMenu")}
                         </Button>

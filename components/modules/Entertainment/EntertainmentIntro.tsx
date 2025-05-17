@@ -29,7 +29,7 @@ export default function OutdoorEntertainment() {
               viewport={{ once: true }}
               className="uppercase text-4xl md:text-5xl font-semibold tracking-wider mb-8"
             >
-              Piękna Okolica
+              Aktywnie i zielono
             </motion.h1>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -52,7 +52,7 @@ export default function OutdoorEntertainment() {
               transition={{ delay: 0.4 }}
               className="grid grid-cols-2 gap-4"
             >
-              <div className="bg-gray-50 p-4 rounded-lg flex items-start gap-3">
+              <div className="bg-pink-50 p-4 flex items-start gap-3">
                 <Trees className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-medium">Lasy i łąki</h3>
@@ -61,7 +61,7 @@ export default function OutdoorEntertainment() {
                   </p>
                 </div>
               </div>
-              <div className="bg-gray-50 p-4 rounded-lg flex items-start gap-3">
+              <div className="bg-pink-50 p-4 flex items-start gap-3">
                 <Waves className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-medium">Rzeki</h3>
@@ -144,7 +144,7 @@ export default function OutdoorEntertainment() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="order-2 lg:order-1">
               <h2 className="text-3xl font-semibold mb-4">
-                AKTYWNIE PO ZDROWIE
+                ZDROWIE I AKTYWNOŚĆ
               </h2>
               <p className="text-lg mb-6">
                 Nasza okolica to doskonały teren do spacerów, Nordic Walking,
@@ -154,11 +154,11 @@ export default function OutdoorEntertainment() {
               </p>
               <ul className="space-y-4 mb-6">
                 <li className="flex items-start gap-3">
-                  <Ship className="h-6 w-6 text-pink-500 mt-1" />
+                  <Ship className="h-6 w-6 text-avangarda mt-1" />
                   <span>Portem Różan z kajakami, łódkami, tawerną i plażą</span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Footprints className="h-10 w-10 text-pink-500 mt-1" />
+                  <Footprints className="h-10 w-10 text-avangarda mt-1" />
                   <span>
                     Trasą spacerową z hotelu do portu i odtworzonym starobrukiem
                     z zabytkowymi latarenkami. Już dzisiaj zapraszamy
@@ -204,15 +204,15 @@ export default function OutdoorEntertainment() {
                 Zapraszamy Państwa na basen rekreacyjny z biczami wodnymi.
               </p>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <Swimming className="h-6 w-6 text-blue-600 mb-2" />
+                <div className="bg-pink-50 p-4">
+                  <Swimming className="h-6 w-6 text-avangarda mb-2" />
                   <h3 className="font-medium mb-1">Basen rekreacyjny</h3>
                   <p className="text-sm text-gray-600">
                     Komfortowy basen z atrakcjami wodnymi
                   </p>
                 </div>
-                <div className="bg-blue-50 p-4 rounded-lg">
-                  <Waves className="h-6 w-6 text-blue-600 mb-2" />
+                <div className="bg-pink-50 p-4">
+                  <Waves className="h-6 w-6 text-avangarda mb-2" />
                   <h3 className="font-medium mb-1">Bicze wodne</h3>
                   <p className="text-sm text-gray-600">
                     Relaksujący masaż wodny dla ciała
@@ -221,9 +221,9 @@ export default function OutdoorEntertainment() {
               </div>
 
               {/* Opening Hours Information */}
-              <div className="bg-blue-50 p-4 rounded-lg mb-6">
+              <div className="bg-pink-50 p-4 mb-6">
                 <div className="flex items-center gap-2 mb-3">
-                  <Clock className="h-5 w-5 text-blue-600" />
+                  <Clock className="h-5 w-5 text-avangarda" />
                   <h3 className="font-medium">Godziny otwarcia</h3>
                 </div>
                 <div className="grid grid-cols-2 gap-2 text-sm">
@@ -252,13 +252,13 @@ export default function OutdoorEntertainment() {
           transition={{ delay: 0.5 }}
           className="mb-16"
         >
-          <div className="flex items-center justify-center gap-3 mb-8">
+          {/* <div className="flex items-center justify-center gap-3 mb-8">
             <div className="h-px flex-1 bg-gray-200"></div>
             <h2 className="text-2xl font-semibold text-center">
               Atrakcje dla dzieci
             </h2>
             <div className="h-px flex-1 bg-gray-200"></div>
-          </div>
+          </div> */}
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="order-2 lg:order-1">
@@ -270,16 +270,16 @@ export default function OutdoorEntertainment() {
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                <div className="bg-green-50 p-4 rounded-lg">
-                  <Playground className="h-6 w-6 text-green-600 mb-2" />
+                <div className="bg-pink-50 p-4">
+                  <Playground className="h-6 w-6 text-avangarda mb-2" />
                   <h3 className="font-medium mb-1">Plac zabaw</h3>
                   <p className="text-sm text-gray-600">
                     Nowoczesny plac zabaw z bezpiecznymi atrakcjami dla dzieci w
                     różnym wieku
                   </p>
                 </div>
-                <div className="bg-green-50 p-4 rounded-lg">
-                  <Leaf className="h-6 w-6 text-green-600 mb-2" />
+                <div className="bg-pink-50 p-4">
+                  <Leaf className="h-6 w-6 text-avangarda mb-2" />
                   <h3 className="font-medium mb-1">Ścieżka edukacyjna</h3>
                   <p className="text-sm text-gray-600">
                     Poznawanie lokalnej flory i fauny poprzez zabawę
@@ -289,13 +289,13 @@ export default function OutdoorEntertainment() {
 
               <ul className="space-y-4 mb-6">
                 <li className="flex items-start gap-3">
-                  <Baby className="h-6 w-6 text-pink-500 mt-1" />
+                  <Baby className="h-6 w-6 text-avangarda mt-1" />
                   <span>
                     Płytki brodzik dla najmłodszych w strefie basenowej
                   </span>
                 </li>
                 <li className="flex items-start gap-3">
-                  <Gamepad2 className="h-6 w-6 text-pink-500 mt-1" />
+                  <Gamepad2 className="h-6 w-6 text-avangarda mt-1" />
                   <span>
                     Pokój gier z konsolami i grami planszowymi na wypadek
                     niepogody
@@ -303,7 +303,7 @@ export default function OutdoorEntertainment() {
                 </li>
               </ul>
 
-              <div className="bg-yellow-50 p-4 rounded-lg">
+              <div className="bg-pink-100 p-4">
                 <h3 className="font-medium mb-2">
                   Sezonowe atrakcje dla dzieci:
                 </h3>

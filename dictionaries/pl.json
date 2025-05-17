@@ -74,7 +74,11 @@
     "specialtiesTitle": "Nasze specjalności",
     "specialtiesIntro": "Nasza restauracja słynie z wyjątkowych dań, które łączą tradycję z nowoczesnością. Każde danie przygotowywane jest z pasją przez naszych doświadczonych szefów kuchni, którzy dbają o najdrobniejsze detale i najwyższą jakość.",
     "seeInMenu": "Zobacz w menu",
-    "priceRange": "Zakres cenowy:"
+    "priceRange": "Zakres cenowy:",
+    "ctaTitle": "Zarezerwuj stolik już dziś",
+    "ctaDescription": "Doświadcz wyjątkowej kuchni i atmosfery. Zadzwoń, aby zarezerwować stolik lub pobierz nasze menu, aby poznać nasze pyszne dania.",
+    "callToBook": "Zadzwoń, aby zarezerwować",
+    "downloadMenu": "Pobierz menu"
   },
   "clubDetails": {
     "title": "Klub Kula",
@@ -312,7 +316,7 @@
     },
     "hours": {
       "title": {
-        "spa": "Strefa Spa",
+        "spa": "Basen & Strefa Spa",
         "saltRoom": "Grota Solna",
         "manicure": "Salon Manicure"
       },
@@ -335,7 +339,55 @@
         "saltRoom": "od 60 zł / sesja",
         "manicure": "od 90 zł / zabieg"
       }
-    }
+    },
+    "poolTitle": "Basen",
+    "poolSubtitle": "Relaks i regeneracja",
+    "poolDescription": "Nasz luksusowy basen oferuje doskonałe miejsce do relaksu i wypoczynku. Zanurz się w krystalicznie czystej wodzie i ciesz się orzeźwiającą kąpielą w spokojnym otoczeniu zaprojektowanym z myślą o Twoim komforcie.",
+    "poolFeatures": {
+      "temperature": {
+        "title": "Kontrola temperatury",
+        "description": "Utrzymywana na idealnym poziomie przez cały rok dla Twojego komfortu."
+      },
+      "facilities": {
+        "title": "Wysokiej klasy udogodnienia",
+        "description": "Wygodne leżaki, świeże ręczniki i przebieralnie do dyspozycji gości."
+      },
+      "access": {
+        "title": "Łatwy dostęp",
+        "description": "Bezpłatny dla gości hotelowych, z możliwością zakupu biletów dziennych dla odwiedzających."
+      }
+    },
+    "poolPrices": {
+      "adult": {
+        "title": "Bilet dla dorosłych",
+        "price": "50 PLN / 2h"
+      },
+      "child": {
+        "title": "Bilet dla dzieci",
+        "price": "30 PLN / 2h"
+      },
+      "family": {
+        "title": "Bilet rodzinny",
+        "price": "120 PLN / 2h"
+      }
+    },
+    "kidsPoolTitle": "Strefa dla dzieci",
+    "kidsPoolDescription": "Stworzyliśmy specjalną strefę basenową dla naszych najmłodszych gości. Nasz brodzik zapewnia bezpieczne i zabawne środowisko, w którym dzieci mogą pluskać się i bawić pod czujnym okiem opiekunów.",
+    "kidsPoolFeatures": {
+      "safety": {
+        "title": "Bezpieczeństwo",
+        "description": "Płytka głębokość i antypoślizgowe powierzchnie zaprojektowane z myślą o bezpieczeństwie dzieci."
+      },
+      "fun": {
+        "title": "Elementy zabawy",
+        "description": "Zabawne wodne atrakcje i zabawki, które zapewniają dzieciom rozrywkę."
+      },
+      "supervision": {
+        "title": "Nadzór",
+        "description": "Przeszkolony personel na miejscu, choć nadal wymagany jest nadzór rodzicielski."
+      }
+    },
+    "bookPoolSession": "Zarezerwuj wizytę na basenie"
   },
   "events": {
     "title": "Wesela i przyjęcia",

@@ -154,11 +154,11 @@ export function Navbar({ lang, dict }: NavbarProps) {
         {isScrolled && (
           <Link href={getLocalizedHref("/")} className="flex-shrink-0">
             <Image
-              src="/avangarda-logo-sm-2.png"
+              src="/avangarda-logo-sm-4.png"
               alt="Hotel Avangarda"
               width={50}
               height={40}
-              className="h-auto w-[40px] transition-opacity duration-500 sm:w-[50px]"
+              className="mt-2 h-auto w-[80px] transition-opacity duration-500 sm:w-[90px]"
               priority
             />
           </Link>

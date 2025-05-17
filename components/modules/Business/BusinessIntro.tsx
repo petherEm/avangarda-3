@@ -156,7 +156,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
   };
 
   return (
-    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-[#404042] lg:py-20">
+    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Introduction Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
@@ -281,7 +281,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
           className="mb-20"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
-            <Presentation className="h-7 w-7 text-avangarda" />
+            {/* <Presentation className="h-7 w-7 text-avangarda" /> */}
             <h2 className="text-3xl font-semibold text-center">
               {t("business.roomsTitle")}
             </h2>
@@ -458,7 +458,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
           className="mb-20 bg-gray-50 p-8"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
-            <Layout className="h-7 w-7 text-avangarda" />
+            {/* <Layout className="h-7 w-7 text-avangarda" /> */}
             <h2 className="text-3xl font-semibold text-center">
               {t("business.arrangementTitle")}
             </h2>
@@ -525,7 +525,7 @@ export default function BusinessIntro({ dict, lang }: BusinessIntroProps) {
           className="mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
-            <CalendarIcon className="h-7 w-7 text-avangarda" />
+            {/* <CalendarIcon className="h-7 w-7 text-avangarda" /> */}
             <h2 className="text-3xl font-semibold text-center">
               {t("business.availabilityTitle")}
             </h2>

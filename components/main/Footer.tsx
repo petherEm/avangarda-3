@@ -122,6 +122,19 @@ export function Footer({ lang, dict }: FooterProps) {
 
                 {/* Right Column - Conference and Address */}
                 <div className="space-y-6">
+                  {/* Address */}
+                  <div className="space-y-3 text-center sm:text-left">
+                    <h2 className="font-medium text-base md:text-lg">Adres</h2>
+                    <address className="not-italic text-xs md:text-sm">
+                      <div className="flex items-start justify-center sm:justify-start gap-2">
+                        <MapPin className="h-3 w-3 text-[#E31C79] mt-0.5" />
+                        <div className="opacity-75">
+                          <p>ul. Królowej Bony 3</p>
+                          <p>Różan, 06-230, Polska</p>
+                        </div>
+                      </div>
+                    </address>
+                  </div>
                   {/* Conference Contact */}
                   <div className="space-y-3 text-center sm:text-left">
                     <h2 className="font-medium text-base md:text-lg">
@@ -142,20 +155,6 @@ export function Footer({ lang, dict }: FooterProps) {
                         </Link>
                       </div>
                     </div>
-                  </div>
-
-                  {/* Address */}
-                  <div className="space-y-3 text-center sm:text-left">
-                    <h2 className="font-medium text-base md:text-lg">Adres</h2>
-                    <address className="not-italic text-xs md:text-sm">
-                      <div className="flex items-start justify-center sm:justify-start gap-2">
-                        <MapPin className="h-3 w-3 text-[#E31C79] mt-0.5" />
-                        <div className="opacity-75">
-                          <p>ul. Królowej Bony 3</p>
-                          <p>Różan, 06-230, Polska</p>
-                        </div>
-                      </div>
-                    </address>
                   </div>
                 </div>
               </div>

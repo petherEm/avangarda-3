@@ -102,7 +102,7 @@ const Spa = ({ lang = "pl", dict }: SpaProps) => {
               >
                 <span className="text-lg md:text-lg">{attraction}</span>
                 {index < attractions.length - 1 && (
-                  <span className="mx-3 text-[#404042]/40">•</span>
+                  <span className="mx-3 text-avangarda text-4xl">•</span>
                 )}
               </motion.div>
             ))}

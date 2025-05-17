@@ -9,6 +9,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Clock, Download, Calendar, Phone, Info, Sparkles } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { SPA_TREATMENTS, SPA_FEATURED_SERVICES } from "@/constants";
+import PoolSection from "@/components/pool-section";
 
 // Helper function to get nested dictionary values using dot notation
 const getNestedValue = (obj: any, path: string) => {
@@ -25,7 +26,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
   const t = (key: string) => getNestedValue(dict, key) || key;
 
   return (
-    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-[#404042] lg:py-20">
+    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Introduction Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
@@ -86,7 +87,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-12">
-            <div className="relative aspect-[4/3] w-full overflow-hidden rounded-none">
+            <div className="relative aspect-[6/5] w-full overflow-hidden rounded-none">
               <Image
                 src="/spa/spa-02.jpeg"
                 alt={t("spa.wellnessTitle")}
@@ -115,7 +116,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                 </TabsList>
                 {SPA_TREATMENTS.map((category, index) => (
                   <TabsContent key={index} value={category.id}>
-                    <div className="p-4 bg-neutral-50">
+                    <div className="p-4 bg-pink-50">
                       <h4 className="text-xl font-medium mb-2">
                         {t(category.nameKey)}
                       </h4>
@@ -125,7 +126,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                           <p className="text-sm text-gray-500">
                             {lang === "pl" ? "Zakres cenowy:" : "Price range:"}
                           </p>
-                          <p className="font-medium text-secondary">
+                          <p className="font-medium text-avangarda">
                             {t(category.priceRangeKey)}
                           </p>
                         </div>
@@ -143,7 +144,10 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                 ))}
               </Tabs>
 
-              <Button className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                className="w-fit sm:w-auto flex items-center gap-2"
+              >
                 <Download className="h-4 w-4" />
                 {t("spa.downloadCatalog")}
               </Button>
@@ -155,7 +159,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
               <Card key={index} className="overflow-hidden rounded-none">
                 <div className="relative h-48 w-full">
                   <Image
-                    src={service.imageKey}
+                    src={service.imageKey || "/placeholder.svg"}
                     alt={t(service.nameKey)}
                     fill
                     className="object-cover"
@@ -166,7 +170,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   <p className="text-sm text-gray-600 mb-2">
                     {t(service.descriptionKey)}
                   </p>
-                  <p className="text-secondary font-medium">
+                  <p className="text-avangarda font-medium">
                     {t(service.priceKey)} / {t(service.durationKey)}
                   </p>
                 </CardContent>
@@ -195,7 +199,9 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
 
               <div className="space-y-2 mb-6">
                 <div className="flex items-start gap-2">
-                  <Info className="h-5 w-5 text-rose-400 mt-1" />
+                  <div className="flex-shrink-0">
+                    <Info className="h-5 w-5 text-avangarda mt-1" />
+                  </div>
                   <p>
                     <span className="font-medium">
                       {t("spa.saltRoomBenefits.respiratory.title")}
@@ -204,7 +210,9 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Info className="h-5 w-5 text-rose-400 mt-1" />
+                  <div className="flex-shrink-0">
+                    <Info className="h-5 w-5 text-avangarda mt-1" />
+                  </div>
                   <p>
                     <span className="font-medium">
                       {t("spa.saltRoomBenefits.immunity.title")}
@@ -213,7 +221,9 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   </p>
                 </div>
                 <div className="flex items-start gap-2">
-                  <Info className="h-5 w-5 text-rose-400 mt-1" />
+                  <div className="flex-shrink-0">
+                    <Info className="h-5 w-5 text-avangarda mt-1" />
+                  </div>
                   <p>
                     <span className="font-medium">
                       {t("spa.saltRoomBenefits.stress.title")}
@@ -224,7 +234,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
               </div>
 
               <div className="flex flex-wrap gap-4">
-                <div className="bg-neutral-50 p-4 rounded-lg">
+                <div className="bg-pink-50 p-4">
                   <p className="font-medium">
                     {t("spa.saltRoomPrices.individual.title")}
                   </p>
@@ -232,7 +242,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                     {t("spa.saltRoomPrices.individual.price")}
                   </p>
                 </div>
-                <div className="bg-neutral-50 p-4 rounded-lg">
+                <div className="bg-pink-50 p-4">
                   <p className="font-medium">
                     {t("spa.saltRoomPrices.family.title")}
                   </p>
@@ -240,7 +250,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                     {t("spa.saltRoomPrices.family.price")}
                   </p>
                 </div>
-                <div className="bg-neutral-50 p-4 rounded-lg">
+                <div className="bg-pink-50 p-4">
                   <p className="font-medium">
                     {t("spa.saltRoomPrices.fivepack.title")}
                   </p>
@@ -267,7 +277,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-16"
+          className="mb-12"
         >
           <h2 className="text-3xl font-semibold mb-8 text-center">
             {t("spa.beautyTitle")}
@@ -281,7 +291,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
               <p className="mb-6 text-lg">{t("spa.beautyDescription")}</p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-                <div className="bg-neutral-50 p-4">
+                <div className="bg-pink-50 p-4">
                   <h4 className="font-medium mb-1">
                     {t("spa.beautyServices.classic.title")}
                   </h4>
@@ -293,7 +303,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   </p>
                 </div>
 
-                <div className="bg-neutral-50 p-4">
+                <div className="bg-pink-50 p-4">
                   <h4 className="font-medium mb-1">
                     {t("spa.beautyServices.hybrid.title")}
                   </h4>
@@ -305,7 +315,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   </p>
                 </div>
 
-                <div className="bg-neutral-50 p-4">
+                <div className="bg-pink-50 p-4">
                   <h4 className="font-medium mb-1">
                     {t("spa.beautyServices.japanese.title")}
                   </h4>
@@ -317,14 +327,14 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   </p>
                 </div>
 
-                <div className="bg-neutral-50 p-4">
+                <div className="bg-pink-50 p-4">
                   <h4 className="font-medium mb-1">
                     {t("spa.beautyServices.extension.title")}
                   </h4>
                   <p className="text-sm mb-2">
                     {t("spa.beautyServices.extension.description")}
                   </p>
-                  <p className="text-secondary font-medium">
+                  <p className="text-avangarda font-medium">
                     {t("spa.beautyServices.extension.price")}
                   </p>
                 </div>
@@ -335,14 +345,14 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   <Calendar className="h-4 w-4" />
                   {t("spa.bookAppointment")}
                 </Button>
-                <Link href={`/${lang}/galeria-manicure`}>
+                {/* <Link href={`/${lang}/galeria-manicure`}>
                   <Button
                     variant="secondary"
                     className="flex items-center gap-2"
                   >
                     {t("spa.seeGallery")}
                   </Button>
-                </Link>
+                </Link> */}
               </div>
             </div>
 
@@ -357,15 +367,18 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
           </div>
         </motion.div>
 
+        {/* Pool Section */}
+        <PoolSection lang={lang} dict={dict} />
+
         {/* Opening Hours & Prices Section */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-20 bg-neutral-50 p-8"
+          className="mb-20 bg-pink-50 p-8"
         >
-          <div className="flex items-center justify-center gap-3 mb-8">
-            <Clock className="h-7 w-7 text-rose-400" />
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Clock className="h-7 w-7 text-avangarda" />
             <h2 className="text-3xl font-semibold text-center">
               {t("spa.hoursTitle")}
             </h2>
@@ -375,7 +388,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
             <Card className="rounded-none">
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold mb-4 flex items-center">
-                  <Sparkles className="h-5 w-5 mr-2 text-rose-400" />
+                  <Sparkles className="h-5 w-5 mr-2 text-avangarda" />
                   {t("spa.hours.title.spa")}
                 </h3>
                 <div className="space-y-4">
@@ -392,7 +405,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                     <p>{t("spa.hours.spa.weekends")}</p>
                   </div>
                   <div className="pt-2">
-                    <Badge className="bg-rose-100 text-rose-800 hover:bg-rose-200">
+                    <Badge className="bg-pink-100 text-avangarda hover:bg-pink-200 rounded-none">
                       {t("spa.hours.prices.spa")}
                     </Badge>
                   </div>
@@ -403,7 +416,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
             <Card className="rounded-none">
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold mb-4 flex items-center">
-                  <Sparkles className="h-5 w-5 mr-2 text-rose-400" />
+                  <Sparkles className="h-5 w-5 mr-2 text-avangarda" />
                   {t("spa.hours.title.saltRoom")}
                 </h3>
                 <div className="space-y-4">
@@ -420,7 +433,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                     <p>{t("spa.hours.saltRoom.weekends")}</p>
                   </div>
                   <div className="pt-2">
-                    <Badge className="bg-rose-100 text-rose-800 hover:bg-rose-200">
+                    <Badge className="bg-pink-100 text-avangarda hover:bg-pink-200 rounded-none">
                       {t("spa.hours.prices.saltRoom")}
                     </Badge>
                   </div>
@@ -431,7 +444,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
             <Card className="rounded-none">
               <CardContent className="pt-6">
                 <h3 className="text-xl font-semibold mb-4 flex items-center">
-                  <Sparkles className="h-5 w-5 mr-2 text-rose-400" />
+                  <Sparkles className="h-5 w-5 mr-2 text-avangarda" />
                   {t("spa.hours.title.manicure")}
                 </h3>
                 <div className="space-y-4">
@@ -448,7 +461,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                     <p>{t("spa.hours.manicure.weekends")}</p>
                   </div>
                   <div className="pt-2">
-                    <Badge className="bg-rose-100 text-rose-800 hover:bg-rose-200">
+                    <Badge className="bg-pink-100 text-avangarda hover:bg-pink-200 rounded-none">
                       {t("spa.hours.prices.manicure")}
                     </Badge>
                   </div>
@@ -464,14 +477,20 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                 variant="outline"
                 size="sm"
                 className="flex items-center gap-2"
+                asChild
               >
-                <Phone className="h-4 w-4" />
-                {t("spa.phoneReservation")}
+                <Link
+                  href="tel:+48505158200"
+                  className="flex items-center gap-2"
+                >
+                  <Phone className="h-4 w-4" />
+                  {t("spa.phoneReservation")}
+                </Link>
               </Button>
-              <Button size="sm" className="flex items-center gap-2">
+              {/* <Button size="sm" className="flex items-center gap-2">
                 <Calendar className="h-4 w-4" />
                 {t("spa.onlineReservation")}
-              </Button>
+              </Button> */}
             </div>
           </div>
         </motion.div>

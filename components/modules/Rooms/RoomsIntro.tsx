@@ -109,7 +109,7 @@ function RoomCard({
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ delay: 0.1 * (index + 1) }}
-      className="bg-white rounded-lg overflow-hidden shadow-lg border border-gray-100"
+      className="bg-white overflow-hidden shadow-lg border border-gray-100"
     >
       <div className="grid grid-cols-1 md:grid-cols-3">
         {/* Main Image with Navigation */}
@@ -154,7 +154,7 @@ function RoomCard({
               e.preventDefault();
               openGallery(currentImageIndex);
             }}
-            className="absolute bottom-2 left-2 bg-pink-500 text-white text-xs px-2 py-1 rounded flex items-center gap-1"
+            className="absolute bottom-2 left-2 bg-pink-500 text-white text-xs px-2 py-1 flex items-center gap-1"
           >
             <ImageIcon className="h-3 w-3" />
             <span>{t("rooms.gallery.viewAll")}</span>
@@ -314,7 +314,7 @@ export default function RoomsIntro({ dict, lang }: RoomsIntroProps) {
   const t = (key: string) => getNestedValue(dict, key) || key;
 
   return (
-    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-[#404042] lg:py-20">
+    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Introduction Section with Building Photo */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16">
@@ -346,19 +346,19 @@ export default function RoomsIntro({ dict, lang }: RoomsIntroProps) {
               <p className="text-lg mb-2">{t("rooms.everyRoomHas")}</p>
               <ul className="space-y-2">
                 <li className="flex items-start">
-                  <Wind className="h-5 w-5 text-pink-500 mr-2 mt-0.5" />
+                  <Wind className="h-5 w-5 text-avangarda mr-2 mt-0.5" />
                   <span>{t("rooms.roomAmenities.ac")}</span>
                 </li>
                 <li className="flex items-start">
-                  <Tv className="h-5 w-5 text-pink-500 mr-2 mt-0.5" />
+                  <Tv className="h-5 w-5 text-avangarda mr-2 mt-0.5" />
                   <span>{t("rooms.roomAmenities.tv")}</span>
                 </li>
                 <li className="flex items-start">
-                  <Bath className="h-5 w-5 text-pink-500 mr-2 mt-0.5" />
+                  <Bath className="h-5 w-5 text-avangarda mr-2 mt-0.5" />
                   <span>{t("rooms.roomAmenities.bathroom")}</span>
                 </li>
                 <li className="flex items-start">
-                  <Coffee className="h-5 w-5 text-pink-500 mr-2 mt-0.5" />
+                  <Coffee className="h-5 w-5 text-avangarda mr-2 mt-0.5" />
                   <span>{t("rooms.roomAmenities.beverages")}</span>
                 </li>
               </ul>
@@ -399,25 +399,25 @@ export default function RoomsIntro({ dict, lang }: RoomsIntroProps) {
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-4 mb-8 bg-white rounded-lg p-1 ">
               <TabsTrigger
                 value="all"
-                className="data-[state=active]:bg-transparent data-[state=active]:text-pink-600 data-[state=active]:border-b-2 data-[state=active]:border-pink-500 rounded-none"
+                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
               >
                 {t("rooms.tabs.all")}
               </TabsTrigger>
               <TabsTrigger
                 value="standard"
-                className="data-[state=active]:bg-transparent data-[state=active]:text-pink-600 data-[state=active]:border-b-2 data-[state=active]:border-pink-500 rounded-none"
+                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
               >
                 {t("rooms.tabs.standard")}
               </TabsTrigger>
               <TabsTrigger
                 value="family"
-                className="data-[state=active]:bg-transparent data-[state=active]:text-pink-600 data-[state=active]:border-b-2 data-[state=active]:border-pink-500 rounded-none"
+                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
               >
                 {t("rooms.tabs.family")}
               </TabsTrigger>
               <TabsTrigger
                 value="apartment"
-                className="data-[state=active]:bg-transparent data-[state=active]:text-pink-600 data-[state=active]:border-b-2 data-[state=active]:border-pink-500 rounded-none"
+                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
               >
                 {t("rooms.tabs.apartment")}
               </TabsTrigger>

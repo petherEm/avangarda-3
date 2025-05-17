@@ -88,9 +88,11 @@ const GastroFort = ({ dict, lang }: AboutProps) => {
           transition={{ delay: 0.3 }}
           className="mb-12"
         >
-          <h2 className="text-2xl font-semibold mb-6 text-center">
-            Galeria Fort
-          </h2>
+          <div className="flex items-center justify-center gap-3 mb-8">
+            <div className="h-px flex-1 bg-gray-200"></div>
+            <h2 className="text-3xl font-semibold text-center">Galeria Fort</h2>
+            <div className="h-px flex-1 bg-gray-200"></div>
+          </div>
 
           {/* Desktop Layout - Updated grid without fort-03.jpg */}
           <div className="hidden md:grid grid-cols-12 gap-4">

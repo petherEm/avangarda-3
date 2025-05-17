@@ -74,7 +74,11 @@
     "specialtiesTitle": "Our Specialties",
     "specialtiesIntro": "Our restaurant is famous for its exceptional dishes that combine tradition with modernity. Each dish is prepared with passion by our experienced chefs who pay attention to the smallest details and highest quality.",
     "seeInMenu": "See in menu",
-    "priceRange": "Price range:"
+    "priceRange": "Price range:",
+    "ctaTitle": "Reserve Your Table Today",
+    "ctaDescription": "Experience our exceptional cuisine and atmosphere. Call us to book your table or download our menu to explore our delicious offerings.",
+    "callToBook": "Call to Book",
+    "downloadMenu": "Download Menu"
   },
   "clubDetails": {
     "title": "Klub Kula",
@@ -313,7 +317,7 @@
     },
     "hours": {
       "title": {
-        "spa": "Spa Area",
+        "spa": "Pool & Spa Area",
         "saltRoom": "Salt Room",
         "manicure": "Manicure Salon"
       },
@@ -336,7 +340,55 @@
         "saltRoom": "from 60 PLN / session",
         "manicure": "from 90 PLN / treatment"
       }
-    }
+    },
+    "poolTitle": "Swimming Pool",
+    "poolSubtitle": "Relax and Rejuvenate",
+    "poolDescription": "Our luxurious swimming pool offers a perfect retreat for relaxation and recreation. Immerse yourself in the crystal-clear waters and enjoy a refreshing swim in a tranquil environment designed for your comfort and pleasure.",
+    "poolFeatures": {
+      "temperature": {
+        "title": "Temperature Control",
+        "description": "Maintained at the perfect temperature year-round for your comfort."
+      },
+      "facilities": {
+        "title": "Premium Facilities",
+        "description": "Comfortable loungers, fresh towels, and changing rooms available."
+      },
+      "access": {
+        "title": "Easy Access",
+        "description": "Complimentary for hotel guests, with day passes available for visitors."
+      }
+    },
+    "poolPrices": {
+      "adult": {
+        "title": "Adult Pass",
+        "price": "50 PLN / 2h"
+      },
+      "child": {
+        "title": "Child Pass",
+        "price": "30 PLN / 2h"
+      },
+      "family": {
+        "title": "Family Pass",
+        "price": "120 PLN / 2h"
+      }
+    },
+    "kidsPoolTitle": "Kids Swimming Area",
+    "kidsPoolDescription": "We've created a special swimming area just for our younger guests. Our kids' pool provides a safe and fun environment where children can splash and play under careful supervision.",
+    "kidsPoolFeatures": {
+      "safety": {
+        "title": "Safety First",
+        "description": "Shallow depth and non-slip surfaces designed with children's safety in mind."
+      },
+      "fun": {
+        "title": "Fun Elements",
+        "description": "Playful water features and toys to keep children entertained."
+      },
+      "supervision": {
+        "title": "Supervision",
+        "description": "Trained staff on hand, though parental supervision is still required."
+      }
+    },
+    "bookPoolSession": "Book Pool Session"
   },
   "events": {
     "title": "Weddings & Events",

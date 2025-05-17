@@ -2,7 +2,6 @@ import AnimateOnScroll from "@/components/animate-on-scroll";
 import HeroImage from "@/components/hero-image";
 import EventsHero from "@/components/modules/Events/EventsHero";
 import EventsIntro from "@/components/modules/Events/EventsIntro";
-import WorkInProgress from "@/components/work-in-progress";
 import { getDictionary } from "@/lib/dictionary";
 
 export default async function EventsMainPage({
@@ -21,9 +20,7 @@ export default async function EventsMainPage({
       <AnimateOnScroll>
         <EventsIntro dict={dict} lang={lang} />
       </AnimateOnScroll>
-      <AnimateOnScroll>
-        <WorkInProgress dict={dict} lang={lang} />
-      </AnimateOnScroll>
+
       <HeroImage image="/gallery-images/gal-05.png" title={title} />
     </>
   );

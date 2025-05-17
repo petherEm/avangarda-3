@@ -101,7 +101,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
   };
 
   return (
-    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-[#404042] lg:py-20">
+    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Introduction Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
@@ -164,7 +164,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
           className="mb-20"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
-            <Users className="h-7 w-7 text-amber-500" />
+            {/* <Users className="h-7 w-7 text-avangarda" /> */}
             <h2 className="text-3xl font-semibold text-center">
               {t("events.venuesTitle")}
             </h2>
@@ -180,7 +180,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                 <TabsTrigger
                   key={venueKey}
                   value={venueKey}
-                  className="data-[state=active]:bg-transparent data-[state=active]:text-amber-600 data-[state=active]:border-b-2 data-[state=active]:border-amber-500 rounded-none"
+                  className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
                 >
                   {t(VENUES_DATA[venueKey].nameKey)}
                 </TabsTrigger>
@@ -212,9 +212,9 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                     </div>
 
                     <div className="grid grid-cols-2 gap-4">
-                      <div className="bg-amber-50 p-4 rounded-lg text-center">
-                        <Users className="h-5 w-5 mx-auto mb-1 text-amber-600" />
-                        <p className="text-sm text-amber-800">
+                      <div className="bg-pink-50 p-4 rounded-none text-center">
+                        <Users className="h-5 w-5 mx-auto mb-1 text-avangarda" />
+                        <p className="text-sm text-avangarda">
                           {t("events.venueInfo.maxGuests")}
                         </p>
                         <p className="text-xl font-semibold">
@@ -222,9 +222,9 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                         </p>
                       </div>
 
-                      <div className="bg-amber-50 p-4 rounded-lg text-center">
-                        <MapPin className="h-5 w-5 mx-auto mb-1 text-amber-600" />
-                        <p className="text-sm text-amber-800">
+                      <div className="bg-pink-50 p-4 rounded-none text-center">
+                        <MapPin className="h-5 w-5 mx-auto mb-1 text-avangarda" />
+                        <p className="text-sm text-avangarda">
                           {t("events.venueInfo.area")}
                         </p>
                         <p className="text-xl font-semibold">
@@ -240,7 +240,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                       <ul className="grid grid-cols-2 gap-2">
                         {venue.featuresKeys.map((featureKey, i) => (
                           <li key={i} className="flex items-center gap-2">
-                            <div className="h-1.5 w-1.5 rounded-full bg-amber-500"></div>
+                            <div className="h-1.5 w-1.5 rounded-full bg-pink-500"></div>
                             <span>{t(featureKey)}</span>
                           </li>
                         ))}
@@ -268,10 +268,10 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-20 bg-neutral-50 rounded-xl p-8"
+          className="mb-20 bg-pink-50 rounded-xl p-8"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
-            <CalendarIcon className="h-7 w-7 text-amber-500" />
+            {/* <CalendarIcon className="h-7 w-7 text-pink-500" /> */}
             <h2 className="text-3xl font-semibold text-center">
               {t("events.availableDates")}
             </h2>
@@ -354,7 +354,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
               </div>
 
               {date && (
-                <div className="bg-amber-50 p-4">
+                <div className="bg-pink-50 p-4">
                   <h4 className="font-medium mb-2">
                     {t("events.selectedDate")}:{" "}
                     {date.toLocaleDateString(lang === "pl" ? "pl-PL" : "en-US")}
@@ -373,7 +373,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
             <div className="space-y-6">
               <div className="bg-white p-6 shadow-sm">
                 <h3 className="text-xl font-medium mb-4 flex items-center gap-2">
-                  <Utensils className="h-5 w-5 text-amber-500" />
+                  <Utensils className="h-5 w-5 text-avangarda" />
                   {t("events.packages.title")}
                 </h3>
                 <div className="space-y-4">
@@ -398,13 +398,13 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
 
               <div className="bg-white p-6 shadow-sm">
                 <h3 className="text-xl font-medium mb-4 flex items-center gap-2">
-                  <Music className="h-5 w-5 text-amber-500" />
+                  <Music className="h-5 w-5 text-avangarda" />
                   {t("events.services.title")}
                 </h3>
                 <ul className="space-y-2">
                   {ADDITIONAL_SERVICES.map((service, index) => (
                     <li key={index} className="flex items-center gap-2">
-                      <div className="h-1.5 w-1.5 rounded-full bg-amber-500"></div>
+                      <div className="h-1.5 w-1.5 rounded-full bg-pink-500"></div>
                       <span>{t(service.nameKey)}</span>
                     </li>
                   ))}
@@ -422,10 +422,11 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
           className="mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
-            <Camera className="h-7 w-7 text-amber-500" />
+            <div className="h-px flex-1 bg-gray-200"></div>
             <h2 className="text-3xl font-semibold text-center">
               {t("events.galleryTitle")}
             </h2>
+            <div className="h-px flex-1 bg-gray-200"></div>
           </div>
 
           <div className="mb-8">
@@ -449,7 +450,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                   key={index}
                   className={`relative aspect-square cursor-pointer overflow-hidden border-2 ${
                     selectedImage === index
-                      ? "border-amber-500"
+                      ? "border-avangarda"
                       : "border-transparent"
                   }`}
                   onClick={() => setSelectedImage(index)}
