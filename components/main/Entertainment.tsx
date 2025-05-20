@@ -35,16 +35,16 @@ const Entertainment = ({ lang = "pl", dict }: EntertainmentProps) => {
   }, []);
 
   return (
-    <section className="min-h-screen w-full text-[#404042] py-8 md:py-16 overflow-hidden">
+    <section className="min-h-screen w-full text-primary py-8 md:py-16 overflow-hidden">
       <div className="bg-[#000000]/80 min-h-[800px] w-full py-8 md:py-12">
         {/* Content Container */}
-        <div className="max-w-6xl mx-auto p-4 space-y-6 py-16">
-          <h2 className="mt-6 font-alata text-white text-3xl md:text-4xl lg:text-5xl font-normal uppercase tracking-wider mb-6">
+        <div className="max-w-7xl mx-auto px-4 space-y-6 py-16">
+          <h1 className="uppercase text-4xl md:text-5xl font-semibold tracking-wider text-white">
             ROZRYWKA
-          </h2>
+          </h1>
 
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 md:gap-8">
-            <p className="text-white text-base md:text-lg lg:text-xl py-4 md:w-2/3">
+            <p className="text-white text-base md:text-lg leading-relaxed md:w-2/3">
               Odkryj szeroką gamę atrakcji i aktywności, które sprawią, że Twój
               pobyt będzie pełen niezapomnianych wrażeń. W Avangarda każdy
               znajdzie coś dla siebie.

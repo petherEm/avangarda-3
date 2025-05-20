@@ -13,8 +13,8 @@ const ctaOptions = [
 
 const CallToAction = () => {
   return (
-    <Container className="w-full text-[#404042] py-2 md:py-16 bg-white">
-      <div className="flex flex-col items-center">
+    <Container className="w-full text-primary py-2 md:py-16 bg-white">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
         {/* Images Container */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-12">
           {/* First Image */}
@@ -73,7 +73,7 @@ const CallToAction = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.6 }}
-            className="text-base md:text-lg mb-8"
+            className="text-base md:text-lg mb-8 leading-relaxed text-primary"
           >
             Zapewnij sobie niezapomniane chwile w naszym hotelu lub podaruj
             wyjątkowy pakiet w prezencie dla najbliższych. Oferujemy:
@@ -97,7 +97,7 @@ const CallToAction = () => {
               >
                 <span className="text-lg md:text-lg">{option}</span>
                 {index < ctaOptions.length - 1 && (
-                  <span className="mx-3 text-[#404042]/40">•</span>
+                  <span className="mx-3 text-avangarda text-4xl">•</span>
                 )}
               </motion.div>
             ))}

@@ -49,7 +49,7 @@ const Restaurant = ({ dict, lang }: RestaurantProps) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
-              className="text-lg leading-relaxed"
+              className="text-lg leading-relaxed text-primary"
             >
               {dict.restaurants.description}
             </motion.p>

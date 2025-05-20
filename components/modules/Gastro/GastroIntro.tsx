@@ -56,7 +56,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              className="uppercase text-4xl md:text-5xl font-semibold tracking-wider mb-8"
+              className="uppercase text-4xl md:text-5xl font-semibold tracking-wider mb-10"
             >
               {t("diningDetails.title")}
             </motion.h1>
@@ -167,7 +167,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
             </h2>
           </div>
 
-          <p className="text-center max-w-3xl mx-auto mb-12 text-lg">
+          <p className="text-center max-w-3xl mx-auto mb-12 text-lg leading-relaxed">
             {t("diningDetails.specialtiesIntro")}
           </p>
 

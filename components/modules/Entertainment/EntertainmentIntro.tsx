@@ -18,7 +18,7 @@ import {
 
 export default function OutdoorEntertainment() {
   return (
-    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-[#404042] lg:py-20">
+    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section - Beautiful Surroundings */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start mb-16">
@@ -143,10 +143,10 @@ export default function OutdoorEntertainment() {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl font-semibold mb-4">
+              <h2 className="text-3xl font-semibold mb-4 tracking-wider">
                 ZDROWIE I AKTYWNOŚĆ
               </h2>
-              <p className="text-lg mb-6">
+              <p className="text-lg mb-6 leading-relaxed">
                 Nasza okolica to doskonały teren do spacerów, Nordic Walking,
                 wycieczek rowerowych. W pobliżu znajdują się szlaki piesze i
                 rowerowe, które prowadzą przez malownicze tereny nad rzeką
@@ -155,11 +155,13 @@ export default function OutdoorEntertainment() {
               <ul className="space-y-4 mb-6">
                 <li className="flex items-start gap-3">
                   <Ship className="h-6 w-6 text-avangarda mt-1" />
-                  <span>Portem Różan z kajakami, łódkami, tawerną i plażą</span>
+                  <span className="leading-relaxed">
+                    Portem Różan z kajakami, łódkami, tawerną i plażą
+                  </span>
                 </li>
                 <li className="flex items-start gap-3">
                   <Footprints className="h-10 w-10 text-avangarda mt-1" />
-                  <span>
+                  <span className="leading-relaxed">
                     Trasą spacerową z hotelu do portu i odtworzonym starobrukiem
                     z zabytkowymi latarenkami. Już dzisiaj zapraszamy
                   </span>
@@ -199,11 +201,13 @@ export default function OutdoorEntertainment() {
             </div>
 
             <div>
-              <h2 className="text-3xl font-semibold mb-4">WODNY RELAKS</h2>
-              <p className="text-lg mb-6">
+              <h2 className="text-3xl font-semibold mb-4 tracking-wider">
+                WODNY RELAKS
+              </h2>
+              <p className="text-lg mb-6 leading-relaxed">
                 Zapraszamy Państwa na basen rekreacyjny z biczami wodnymi.
               </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6 leading-relaxed">
                 <div className="bg-pink-50 p-4">
                   <Swimming className="h-6 w-6 text-avangarda mb-2" />
                   <h3 className="font-medium mb-1">Basen rekreacyjny</h3>
@@ -262,8 +266,10 @@ export default function OutdoorEntertainment() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="order-2 lg:order-1">
-              <h2 className="text-3xl font-semibold mb-4">RODZINNE PRZYGODY</h2>
-              <p className="text-lg mb-6">
+              <h2 className="text-3xl font-semibold mb-4 tracking-wider">
+                RODZINNE PRZYGODY
+              </h2>
+              <p className="text-lg mb-6 leading-relaxed">
                 Nasze otoczenie oferuje wiele atrakcji dla najmłodszych gości.
                 Dzieci mogą cieszyć się bezpieczną zabawą na świeżym powietrzu i
                 odkrywać uroki natury pod opieką rodziców.
@@ -273,7 +279,7 @@ export default function OutdoorEntertainment() {
                 <div className="bg-pink-50 p-4">
                   <Playground className="h-6 w-6 text-avangarda mb-2" />
                   <h3 className="font-medium mb-1">Plac zabaw</h3>
-                  <p className="text-sm text-gray-600">
+                  <p className="text-sm text-gray-600 leading-relaxed">
                     Nowoczesny plac zabaw z bezpiecznymi atrakcjami dla dzieci w
                     różnym wieku
                   </p>

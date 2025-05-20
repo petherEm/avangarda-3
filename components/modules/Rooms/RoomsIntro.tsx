@@ -202,7 +202,7 @@ function RoomCard({
           <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
             <h3 className="text-2xl font-semibold">{t(room.nameKey)}</h3>
             <div className="text-right mt-2 md:mt-0">
-              <p className="text-lg font-medium text-[#404042]">
+              <p className="text-lg font-medium text-primary leading-relaxed">
                 {t(room.priceKey)}
               </p>
               <p className="text-sm text-gray-500">{t(room.capacityKey)}</p>
@@ -343,8 +343,10 @@ export default function RoomsIntro({ dict, lang }: RoomsIntroProps) {
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
             >
-              <p className="text-lg mb-2">{t("rooms.everyRoomHas")}</p>
-              <ul className="space-y-2">
+              <p className="text-lg leading-relaxed mb-2">
+                {t("rooms.everyRoomHas")}
+              </p>
+              <ul className="space-y-2 leading-relaxed">
                 <li className="flex items-start">
                   <Wind className="h-5 w-5 text-avangarda mr-2 mt-0.5" />
                   <span>{t("rooms.roomAmenities.ac")}</span>

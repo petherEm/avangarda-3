@@ -191,7 +191,7 @@ export default function ClubCoola() {
             <div className="bg-pink-50 p-6 rounded-lg">
               <Music className="h-10 w-10 text-avangarda mb-4" />
               <h3 className="text-xl font-medium mb-2">Najlepsza muzyka</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 leading-relaxed">
                 Nasi DJ-e grają najnowsze hity oraz ponadczasowe klasyki. Każdy
                 weekend to inny motyw muzyczny, od house i techno po R&B i
                 hip-hop.
@@ -201,7 +201,7 @@ export default function ClubCoola() {
             <div className="bg-pink-50 p-6 rounded-lg">
               <Users className="h-10 w-10 text-avangarda mb-4" />
               <h3 className="text-xl font-medium mb-2">Strefy VIP</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 leading-relaxed">
                 Ekskluzywne loże VIP z prywatną obsługą, premium alkoholami i
                 najlepszym widokiem na parkiet. Idealne na specjalne okazje i
                 celebracje.
@@ -211,7 +211,7 @@ export default function ClubCoola() {
             <div className="bg-pink-50 p-6 rounded-lg">
               <Calendar className="h-10 w-10 text-avangarda mb-4" />
               <h3 className="text-xl font-medium mb-2">Specjalne wydarzenia</h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 leading-relaxed">
                 Regularne wydarzenia tematyczne, występy gościnnych DJ-ów i
                 artystów, konkursy z nagrodami oraz niezapomniane imprezy
                 okolicznościowe.

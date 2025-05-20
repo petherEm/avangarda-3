@@ -159,7 +159,7 @@ export function Navbar({ lang, dict }: NavbarProps) {
               width={50}
               height={40}
               className="mt-2 h-auto w-[80px] transition-opacity duration-500 sm:w-[90px]"
-              priority
+              quality={100}
             />
           </Link>
         )}

@@ -44,8 +44,8 @@ const Business = ({ lang = "pl", dict }: BusinessProps) => {
   }, []);
 
   return (
-    <Container className="w-full text-[#404042] py-8 md:py-14 bg-white overflow-hidden">
-      <div className="max-w-[1400px] mx-auto px-4">
+    <Container className="w-full text-primary py-8 md:py-14 bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
           {/* Content Section - Reduced width to make more room for images */}
           <motion.div
@@ -54,18 +54,18 @@ const Business = ({ lang = "pl", dict }: BusinessProps) => {
             whileInView="animate"
             viewport={{ once: true }}
           >
-            <motion.h2
+            <motion.h1
               variants={fadeInUp}
               transition={{ delay: 0.2 }}
-              className="text-4xl md:text-5xl font-semibold uppercase tracking-wider"
+              className="text-4xl md:text-5xl font-semibold uppercase tracking-wider text-primary"
             >
               Biznes
-            </motion.h2>
+            </motion.h1>
 
             <motion.p
               variants={fadeInUp}
               transition={{ delay: 0.3 }}
-              className="text-base md:text-lg"
+              className="text-base md:text-lg leading-relaxed text-primary"
             >
               Hotel Avangarda oferuje nowoczesne sale konferencyjne idealne na
               spotkania biznesowe, szkolenia i eventy firmowe. Zapewniamy pełne

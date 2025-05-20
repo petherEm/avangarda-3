@@ -170,7 +170,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
             </h2>
           </div>
 
-          <p className="text-center max-w-3xl mx-auto mb-12 text-lg">
+          <p className="text-center leading-relaxed max-w-3xl mx-auto mb-12 text-lg">
             {t("events.venuesDescription")}
           </p>
 
@@ -206,7 +206,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                       <h3 className="text-2xl font-semibold mb-2">
                         {t(venue.nameKey)}
                       </h3>
-                      <p className="text-lg">
+                      <p className="text-lg leading-relaxed">
                         {t(`events.venues.${key}.description`)}
                       </p>
                     </div>
@@ -282,7 +282,9 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
               <h3 className="text-2xl font-medium mb-4">
                 {t("events.checkAvailability")}
               </h3>
-              <p className="mb-6">{t("events.availabilityDescription")}</p>
+              <p className="mb-6 leading-relaxed">
+                {t("events.availabilityDescription")}
+              </p>
 
               {/* Two-month calendar view */}
               <div className="bg-white p-4 shadow-sm mb-6">
@@ -359,7 +361,9 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                     {t("events.selectedDate")}:{" "}
                     {date.toLocaleDateString(lang === "pl" ? "pl-PL" : "en-US")}
                   </h4>
-                  <p className="mb-4">{t("events.dateAvailable")}</p>
+                  <p className="mb-4 leading-relaxed">
+                    {t("events.dateAvailable")}
+                  </p>
                   <div className="flex gap-3">
                     <Button size="sm">{t("events.reserveDate")}</Button>
                     <Button variant="outline" size="sm">
@@ -376,7 +380,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                   <Utensils className="h-5 w-5 text-avangarda" />
                   {t("events.packages.title")}
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-4 leading-relaxed">
                   {WEDDING_PACKAGES.map((pkg, index) => (
                     <div
                       key={index}
@@ -467,7 +471,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
           </div>
 
           <div className="text-center">
-            <p className="text-lg mb-6 max-w-3xl mx-auto">
+            <p className="text-lg mb-6 max-w-3xl mx-auto leading-relaxed">
               {t("events.downloadOfferText")}
             </p>
             <Dialog>

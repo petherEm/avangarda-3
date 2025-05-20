@@ -40,7 +40,7 @@ const PoolSection = ({ dict, lang }) => {
             <h3 className="text-2xl font-medium mb-4">
               {t("spa.poolSubtitle") || "Relax and Rejuvenate"}
             </h3>
-            <p className="mb-6 text-lg">
+            <p className="mb-6 text-lg leading-relaxed">
               {t("spa.poolDescription") ||
                 "Our luxurious swimming pool offers a perfect retreat for relaxation and recreation. Immerse yourself in the crystal-clear waters and enjoy a refreshing swim in a tranquil environment designed for your comfort and pleasure."}
             </p>
@@ -50,7 +50,7 @@ const PoolSection = ({ dict, lang }) => {
                 <div className="flex-shrink-0">
                   <Info className="h-5 w-5 text-avangarda mt-1" />
                 </div>
-                <p>
+                <p className="text-md leading-relaxed">
                   <span className="font-medium">
                     {t("spa.poolFeatures.temperature.title") ||
                       "Temperature Control"}
@@ -64,7 +64,7 @@ const PoolSection = ({ dict, lang }) => {
                 <div className="flex-shrink-0">
                   <Info className="h-5 w-5 text-avangarda mt-1" />
                 </div>
-                <p>
+                <p className="text-md leading-relaxed">
                   <span className="font-medium">
                     {t("spa.poolFeatures.facilities.title") ||
                       "Premium Facilities"}
@@ -78,7 +78,7 @@ const PoolSection = ({ dict, lang }) => {
                 <div className="flex-shrink-0">
                   <Info className="h-5 w-5 text-avangarda mt-1" />
                 </div>
-                <p>
+                <p className="text-md leading-relaxed">
                   <span className="font-medium">
                     {t("spa.poolFeatures.access.title") || "Easy Access"}
                   </span>{" "}
@@ -133,7 +133,7 @@ const PoolSection = ({ dict, lang }) => {
                 <div className="flex-shrink-0">
                   <Info className="h-5 w-5 text-avangarda mt-1" />
                 </div>
-                <p>
+                <p className="text-md leading-relaxed">
                   <span className="font-medium">
                     {t("spa.kidsPoolFeatures.safety.title") || "Safety First"}
                   </span>{" "}
@@ -146,7 +146,7 @@ const PoolSection = ({ dict, lang }) => {
                 <div className="flex-shrink-0">
                   <Info className="h-5 w-5 text-avangarda mt-1" />
                 </div>
-                <p>
+                <p className="text-md leading-relaxed">
                   <span className="font-medium">
                     {t("spa.kidsPoolFeatures.fun.title") || "Fun Elements"}
                   </span>{" "}
@@ -159,7 +159,7 @@ const PoolSection = ({ dict, lang }) => {
                 <div className="flex-shrink-0">
                   <Info className="h-5 w-5 text-avangarda mt-1" />
                 </div>
-                <p>
+                <p className="text-md leading-relaxed">
                   <span className="font-medium">
                     {t("spa.kidsPoolFeatures.supervision.title") ||
                       "Supervision"}

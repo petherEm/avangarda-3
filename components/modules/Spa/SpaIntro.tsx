@@ -100,7 +100,9 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
               <h3 className="text-2xl font-medium mb-4">
                 {t("spa.wellnessSubtitle")}
               </h3>
-              <p className="mb-6 text-lg">{t("spa.wellnessDescription")}</p>
+              <p className="mb-6 text-lg leading-relaxed">
+                {t("spa.wellnessDescription")}
+              </p>
 
               <Tabs defaultValue="massage" className="w-full mb-6">
                 <TabsList className="grid w-full grid-cols-3">
@@ -134,7 +136,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                           <p className="text-sm text-gray-500">
                             {lang === "pl" ? "Czas trwania:" : "Duration:"}
                           </p>
-                          <p className="font-medium">
+                          <p className="font-medium leading-relaxed">
                             {t(category.durationKey)}
                           </p>
                         </div>
@@ -166,11 +168,13 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   />
                 </div>
                 <CardContent className="pt-4">
-                  <h4 className="font-medium mb-1">{t(service.nameKey)}</h4>
-                  <p className="text-sm text-gray-600 mb-2">
+                  <h4 className="font-medium mb-1 text-lg">
+                    {t(service.nameKey)}
+                  </h4>
+                  <p className="text-md text-gray-600 mb-2">
                     {t(service.descriptionKey)}
                   </p>
-                  <p className="text-avangarda font-medium">
+                  <p className="text-avangarda font-medium leading-relaxed">
                     {t(service.priceKey)} / {t(service.durationKey)}
                   </p>
                 </CardContent>
@@ -195,14 +199,16 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
               <h3 className="text-2xl font-medium mb-4">
                 {t("spa.saltRoomSubtitle")}
               </h3>
-              <p className="mb-4 text-lg">{t("spa.saltRoomDescription")}</p>
+              <p className="mb-4 text-lg leading-relaxed">
+                {t("spa.saltRoomDescription")}
+              </p>
 
               <div className="space-y-2 mb-6">
                 <div className="flex items-start gap-2">
                   <div className="flex-shrink-0">
                     <Info className="h-5 w-5 text-avangarda mt-1" />
                   </div>
-                  <p>
+                  <p className="text-md leading-relaxed">
                     <span className="font-medium">
                       {t("spa.saltRoomBenefits.respiratory.title")}
                     </span>{" "}
@@ -213,7 +219,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   <div className="flex-shrink-0">
                     <Info className="h-5 w-5 text-avangarda mt-1" />
                   </div>
-                  <p>
+                  <p className="text-md leading-relaxed">
                     <span className="font-medium">
                       {t("spa.saltRoomBenefits.immunity.title")}
                     </span>{" "}
@@ -224,7 +230,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   <div className="flex-shrink-0">
                     <Info className="h-5 w-5 text-avangarda mt-1" />
                   </div>
-                  <p>
+                  <p className="text-md leading-relaxed">
                     <span className="font-medium">
                       {t("spa.saltRoomBenefits.stress.title")}
                     </span>{" "}
@@ -235,7 +241,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
 
               <div className="flex flex-wrap gap-4">
                 <div className="bg-pink-50 p-4">
-                  <p className="font-medium">
+                  <p className="font-medium leading-relaxed">
                     {t("spa.saltRoomPrices.individual.title")}
                   </p>
                   <p className="text-secondary font-medium">
@@ -243,7 +249,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   </p>
                 </div>
                 <div className="bg-pink-50 p-4">
-                  <p className="font-medium">
+                  <p className="font-medium leading-relaxed">
                     {t("spa.saltRoomPrices.family.title")}
                   </p>
                   <p className="text-secondary font-medium">
@@ -251,7 +257,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   </p>
                 </div>
                 <div className="bg-pink-50 p-4">
-                  <p className="font-medium">
+                  <p className="font-medium leading-relaxed">
                     {t("spa.saltRoomPrices.fivepack.title")}
                   </p>
                   <p className="text-secondary font-medium">
@@ -288,14 +294,16 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
               <h3 className="text-2xl font-medium mb-4">
                 {t("spa.beautySubtitle")}
               </h3>
-              <p className="mb-6 text-lg">{t("spa.beautyDescription")}</p>
+              <p className="mb-6 text-lg leading-relaxed">
+                {t("spa.beautyDescription")}
+              </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
                 <div className="bg-pink-50 p-4">
                   <h4 className="font-medium mb-1">
                     {t("spa.beautyServices.classic.title")}
                   </h4>
-                  <p className="text-sm mb-2">
+                  <p className="text-sm mb-2 leading-relaxed">
                     {t("spa.beautyServices.classic.description")}
                   </p>
                   <p className="text-secondary font-medium">
@@ -307,7 +315,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   <h4 className="font-medium mb-1">
                     {t("spa.beautyServices.hybrid.title")}
                   </h4>
-                  <p className="text-sm mb-2">
+                  <p className="text-sm mb-2 leading-relaxed">
                     {t("spa.beautyServices.hybrid.description")}
                   </p>
                   <p className="text-secondary font-medium">
@@ -319,7 +327,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   <h4 className="font-medium mb-1">
                     {t("spa.beautyServices.japanese.title")}
                   </h4>
-                  <p className="text-sm mb-2">
+                  <p className="text-sm mb-2 leading-relaxed">
                     {t("spa.beautyServices.japanese.description")}
                   </p>
                   <p className="text-secondary font-medium">
@@ -331,7 +339,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
                   <h4 className="font-medium mb-1">
                     {t("spa.beautyServices.extension.title")}
                   </h4>
-                  <p className="text-sm mb-2">
+                  <p className="text-sm mb-2 leading-relaxed">
                     {t("spa.beautyServices.extension.description")}
                   </p>
                   <p className="text-avangarda font-medium">

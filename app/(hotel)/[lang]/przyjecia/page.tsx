@@ -20,8 +20,6 @@ export default async function EventsMainPage({
       <AnimateOnScroll>
         <EventsIntro dict={dict} lang={lang} />
       </AnimateOnScroll>
-
-      <HeroImage image="/gallery-images/gal-05.png" title={title} />
     </>
   );
 }

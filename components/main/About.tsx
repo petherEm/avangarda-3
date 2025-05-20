@@ -36,14 +36,29 @@ interface AboutProps {
 const About = ({ dict, lang }: AboutProps) => {
   const mapRef = useRef<HTMLDivElement>(null);
 
+  const fadeIn = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const imageHeight =
+    typeof window !== "undefined" && window.innerWidth < 768
+      ? "180px"
+      : "240px";
+
   return (
-    <Container className="bg-white w-full text-primary py-16 lg:py-24">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Header Section with Images */}
-        <div className="mb-12">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            {/* Text Content */}
-            <div className="lg:col-span-5 space-y-6">
+    <Container className="w-full text-primary py-12 bg-gradient-to-b from-white to-gray-50">
+      <div className="max-w-7xl mx-auto px-4 py-12">
+        {/* Hero Section with Images */}
+        <div className="mb-10 relative">
+          <div className="grid grid-cols-12 gap-4">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeIn}
+              className="col-span-12 lg:col-span-6 relative z-10 bg-white/90 backdrop-blur-sm space-y-10"
+            >
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -52,257 +67,166 @@ const About = ({ dict, lang }: AboutProps) => {
               >
                 {dict.about.title}
               </motion.h1>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-                className="text-lg leading-relaxed"
-              >
+              <p className="text-base md:text-lg leading-relaxed text-primary">
                 {dict.about.description}
-              </motion.p>
-            </div>
+              </p>
+            </motion.div>
 
-            {/* Images Grid */}
-            <div className="lg:col-span-7">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                {/* First Image */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.4 }}
-                  className="relative aspect-[4/3] w-full overflow-hidden shadow-sm group"
-                >
-                  <Image
-                    src="/diver/hotel-01.jpeg"
-                    alt={dict.about.title}
-                    fill
-                    priority
-                    className="object-cover transition-transform duration-700"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    quality={90}
-                  />
-                </motion.div>
-
-                {/* Second Image */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.95 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: 0.5 }}
-                  className="relative aspect-[4/3] w-full overflow-hidden shadow-sm group"
-                >
-                  <Image
-                    src="/diver/narew-03.jpeg"
-                    alt="Scenic view"
-                    fill
-                    priority
-                    className="object-cover transition-transform duration-700"
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    quality={90}
-                  />
-                </motion.div>
+            <div className="col-span-12 lg:col-span-6 lg:mt-6">
+              <div className="grid grid-cols-12 gap-3 h-full">
+                <div className="col-span-8 h-full">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.3 }}
+                    className="relative w-full h-full overflow-hidden shadow-md"
+                    style={{ height: imageHeight }}
+                  >
+                    <Image
+                      src="/diver/hotel-01.jpeg"
+                      alt={dict.about.title}
+                      fill
+                      priority
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      quality={100}
+                    />
+                  </motion.div>
+                </div>
+                <div className="col-span-4 h-full">
+                  <motion.div
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.5 }}
+                    className="relative w-full h-full overflow-hidden shadow-md"
+                    style={{ height: imageHeight }}
+                  >
+                    <Image
+                      src="/diver/narew-03.jpeg"
+                      alt="Scenic view"
+                      fill
+                      priority
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                      quality={100}
+                    />
+                  </motion.div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Main Content - What Makes Us Different and Map */}
-        <div className="grid lg:grid-cols-12 gap-8 lg:gap-12">
-          {/* Left Column - What Makes Us Different and Ratings Combined */}
+        {/* Features and Map Section */}
+        <div className="grid lg:grid-cols-12 gap-6">
+          {/* Left Column - Features */}
           <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="lg:col-span-6"
+            className="lg:col-span-6 h-full flex"
           >
-            <div className="bg-gradient-to-br from-gray-50 to-white p-6  shadow-sm border border-gray-100 h-full flex flex-col">
-              {/* What Makes Us Different Section */}
-              <div className="mb-5">
-                <div className="flex items-center gap-3 mb-5">
-                  <Badge className="bg-pink-100 text-avangarda hover:bg-pink-100">
-                    Co nas wyróżnia
-                  </Badge>
-                  <div className="h-px flex-1 bg-gray-100"></div>
-                </div>
-
-                <ul className="space-y-4">
-                  {/* Green Location */}
-                  <li className="flex items-start gap-3">
-                    <div className="bg-green-50 p-1.5 rounded-full text-green-600 flex-shrink-0 mt-0.5">
-                      <TreePine className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-sm mb-0.5">
-                        Wyjątkowa lokalizacja
-                      </h3>
-                      <p className="text-gray-600 text-xs">
-                        Położenie w zielonej okolicy tuż przy rzece, oferujące
-                        spokój i kontakt z naturą.
-                      </p>
-                    </div>
-                  </li>
-
-                  {/* Wellness & Spa */}
-                  <li className="flex items-start gap-3">
-                    <div className="bg-blue-50 p-1.5 rounded-full text-blue-600 flex-shrink-0 mt-0.5">
-                      <Waves className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-sm mb-0.5">
-                        Wellness i SPA
-                      </h3>
-                      <p className="text-gray-600 text-xs">
-                        Fantastyczna strefa relaksu z basenem, sauną i
-                        profesjonalnymi zabiegami.
-                      </p>
-                    </div>
-                  </li>
-
-                  {/* Restaurant */}
-                  <li className="flex items-start gap-3">
-                    <div className="bg-amber-50 p-1.5 rounded-full text-amber-600 flex-shrink-0 mt-0.5">
-                      <Utensils className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-sm mb-0.5">
-                        Wyjątkowa restauracja
-                      </h3>
-                      <p className="text-gray-600 text-xs">
-                        Prawdziwie niesamowita kuchnia z lokalnymi specjałami i
-                        sezonowym menu.
-                      </p>
-                    </div>
-                  </li>
-
-                  {/* Events & Meetings */}
-                  <li className="flex items-start gap-3">
-                    <div className="bg-pink-50 p-1.5 rounded-full text-pink-600 flex-shrink-0 mt-0.5">
-                      <CalendarHeart className="w-4 h-4" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-sm mb-0.5">
-                        Przestrzeń eventowa
-                      </h3>
-                      <p className="text-gray-600 text-xs">
-                        Idealne miejsce na wesela i spotkania biznesowe z
-                        profesjonalną obsługą.
-                      </p>
-                    </div>
-                  </li>
-                </ul>
+            <div className="bg-white p-6 shadow-md border border-gray-100 w-full h-full">
+              <div className="flex items-center gap-3 mb-4">
+                <h2 className="text-xl font-bold text-gray-900">
+                  Co nas wyróżnia
+                </h2>
+                <div className="h-px flex-1 bg-gradient-to-r from-avangarda/20 to-transparent"></div>
               </div>
 
-              {/* Ratings Section - Compact with Google added */}
-              <div className="mt-auto">
-                <div className="flex items-center gap-3 mb-3">
-                  <Badge className="bg-pink-100 text-avangarda hover:bg-pink-100">
-                    Oceny gości
-                  </Badge>
-                  <div className="h-px flex-1 bg-gray-100"></div>
+              <div className="grid grid-cols-2 gap-4">
+                {/* Green Location */}
+                <div className="group p-4 bg-gradient-to-br from-green-50 to-green-100/30 hover:shadow-md transition-all duration-300">
+                  <div className="bg-green-100 p-2 text-green-600 w-10 h-10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <TreePine className="w-5 h-5" />
+                  </div>
+                  <h3 className="font-semibold text-base mb-1 text-green-800">
+                    Wyjątkowa lokalizacja
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Położenie w zielonej okolicy tuż przy rzece, oferujące
+                    spokój i kontakt z naturą.
+                  </p>
                 </div>
 
-                <div className="flex flex-wrap justify-start gap-3">
-                  {/* TripAdvisor */}
-                  <div className="flex items-center gap-2 bg-white shadow-sm p-2 border border-gray-100">
-                    <Image
-                      src="/tripadvisor-2.png"
-                      alt="TripAdvisor Reviews"
-                      width={60}
-                      height={16}
-                      className="h-auto object-contain"
-                    />
-                    <div className="flex flex-col items-center">
-                      <div className="flex mb-0.5">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className="h-3 w-3 fill-yellow-400 text-yellow-400"
-                          />
-                        ))}
-                      </div>
-                      <span className="text-xs font-medium">4.8/5</span>
-                    </div>
+                {/* Wellness & Spa */}
+                <div className="group p-4 bg-gradient-to-br from-blue-50 to-blue-100/30 hover:shadow-md transition-all duration-300">
+                  <div className="bg-blue-100 p-2 text-blue-600 w-10 h-10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <Waves className="w-5 h-5" />
                   </div>
+                  <h3 className="font-semibold text-base mb-1 text-blue-800">
+                    Wellness i SPA
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Fantastyczna strefa relaksu z basenem, sauną i
+                    profesjonalnymi zabiegami.
+                  </p>
+                </div>
 
-                  {/* Booking.com */}
-                  <div className="flex items-center gap-2 bg-white shadow-sm p-2 border border-gray-100">
-                    <Image
-                      src="/booking.png"
-                      alt="Booking.com"
-                      width={50}
-                      height={16}
-                      className="h-auto object-contain"
-                    />
-                    <div className="flex flex-col items-center">
-                      <div className="flex mb-0.5">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className="h-3 w-3 fill-blue-600 text-blue-600"
-                          />
-                        ))}
-                      </div>
-                      <span className="text-xs font-medium">9.2/10</span>
-                    </div>
+                {/* Restaurant */}
+                <div className="group p-4 bg-gradient-to-br from-amber-50 to-amber-100/30 hover:shadow-md transition-all duration-300">
+                  <div className="bg-amber-100 p-2 text-amber-600 w-10 h-10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <Utensils className="w-5 h-5" />
                   </div>
+                  <h3 className="font-semibold text-base mb-1 text-amber-800">
+                    Wyjątkowa restauracja
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Prawdziwie niesamowita kuchnia z lokalnymi specjałami i
+                    sezonowym menu.
+                  </p>
+                </div>
 
-                  {/* Google */}
-                  <div className="flex items-center gap-2 bg-white shadow-sm p-2 border border-gray-100">
-                    <Image
-                      src="/google-logo-2.jpeg"
-                      alt="Booking.com"
-                      width={50}
-                      height={16}
-                      className="h-auto object-contain"
-                    />
-                    <div className="flex flex-col items-center">
-                      <div className="flex mb-0.5">
-                        {[...Array(5)].map((_, i) => (
-                          <Star
-                            key={i}
-                            className="h-3 w-3 fill-amber-500 text-amber-500"
-                          />
-                        ))}
-                      </div>
-                      <span className="text-xs font-medium">4.7/5</span>
-                    </div>
+                {/* Events & Meetings */}
+                <div className="group p-4 bg-gradient-to-br from-pink-50 to-pink-100/30 hover:shadow-md transition-all duration-300">
+                  <div className="bg-pink-100 p-2 text-pink-600 w-10 h-10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+                    <CalendarHeart className="w-5 h-5" />
                   </div>
+                  <h3 className="font-semibold text-base mb-1 text-pink-800">
+                    Przestrzeń eventowa
+                  </h3>
+                  <p className="text-gray-600 text-sm">
+                    Idealne miejsce na wesela i spotkania biznesowe z
+                    profesjonalną obsługą.
+                  </p>
                 </div>
               </div>
             </div>
           </motion.div>
 
-          {/* Right Column - Map with Button Overlay */}
+          {/* Right Column - Map and Ratings */}
           <motion.div
-            ref={mapRef}
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ delay: 0.3 }}
-            className="lg:col-span-6"
+            transition={{ delay: 0.5 }}
+            className="lg:col-span-6 h-full flex flex-col"
           >
-            <div className="relative overflow-hidden shadow-sm border border-gray-100 h-full">
-              <div className="h-full">
-                <Image
-                  src="/map-scrshot.png"
-                  alt="Map"
-                  fill
-                  className="object-cover w-full h-full"
-                  priority
-                />
-              </div>
+            {/* Map */}
+            <div
+              ref={mapRef}
+              className="relative overflow-hidden shadow-md border border-gray-100 flex-grow"
+              style={{ minHeight: "220px" }}
+            >
+              <Image
+                src="/map-scrshot-3.png"
+                alt="Map"
+                fill
+                className="object-cover w-full h-full"
+                priority
+              />
 
               {/* Map Button Overlay */}
-              <div className="absolute bottom-4 right-4">
+              <div className="absolute bottom-3 right-3">
                 <Button
                   size="sm"
-                  className="bg-avangarda hover:bg-avangarda/90 text-white transition-all"
+                  className="bg-avangarda hover:bg-avangarda/90 text-white transition-all shadow-md"
                   onClick={() =>
                     window.open(
-                      `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(dict.about.address)}`,
+                      "https://maps.app.goo.gl/2xc5CJ8Be6qof2we9",
                       "_blank"
                     )
                   }
@@ -310,6 +234,76 @@ const About = ({ dict, lang }: AboutProps) => {
                   <ExternalLink className="w-3.5 h-3.5 mr-1.5" />
                   Otwórz w Google Maps
                 </Button>
+              </div>
+            </div>
+
+            {/* Ratings Section */}
+            <div className="bg-white p-5 shadow-md border border-gray-100 mt-6">
+              <div className="flex items-center gap-3 mb-4">
+                <h2 className="text-xl font-bold text-gray-900">Oceny gości</h2>
+                <div className="h-px flex-1 bg-gradient-to-r from-avangarda/20 to-transparent"></div>
+              </div>
+
+              <div className="grid grid-cols-3 gap-3">
+                {/* TripAdvisor */}
+                <div className="bg-gradient-to-br from-white to-gray-50 p-3 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center">
+                  <Image
+                    src="/tripadvisor-2.png"
+                    alt="TripAdvisor Reviews"
+                    width={70}
+                    height={20}
+                    className="h-auto object-contain mb-2"
+                  />
+                  <div className="flex mb-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-3.5 w-3.5 fill-yellow-400 text-yellow-400"
+                      />
+                    ))}
+                  </div>
+                  <span className="text-base font-bold">4.8/5</span>
+                </div>
+
+                {/* Booking.com */}
+                <div className="bg-gradient-to-br from-white to-gray-50 p-3 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center">
+                  <Image
+                    src="/booking.png"
+                    alt="Booking.com"
+                    width={70}
+                    height={20}
+                    className="h-auto object-contain mb-2"
+                  />
+                  <div className="flex mb-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-3.5 w-3.5 fill-blue-600 text-blue-600"
+                      />
+                    ))}
+                  </div>
+                  <span className="text-base font-bold">9.2/10</span>
+                </div>
+
+                {/* Google */}
+                <div className="bg-gradient-to-br from-white to-gray-50 p-3 shadow-sm hover:shadow-md transition-all duration-300 flex flex-col items-center">
+                  <Image
+                    src="/google-logo-2.jpeg"
+                    alt="Google Reviews"
+                    width={60}
+                    height={20}
+                    className="mt-3 h-auto object-contain mb-2"
+                  />
+                  <div className="flex mb-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star
+                        key={i}
+                        className="h-3.5 w-3.5 fill-amber-500 text-amber-500"
+                      />
+                    ))}
+                  </div>
+                  <span className="text-base font-bold">4.7/5</span>
+                </div>
               </div>
             </div>
           </motion.div>

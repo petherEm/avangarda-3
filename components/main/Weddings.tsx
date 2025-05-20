@@ -19,8 +19,8 @@ const fadeInScale = {
 
 const Weddings = () => {
   return (
-    <Container className="max-h-screen w-full text-primary py-8 md:py-16 bg-white overflow-hidden">
-      <div className="max-w-[1400px] mx-auto">
+    <Container className="w-full text-primary py-16 md:py-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4">
         {/* Content Section */}
         <div className="mb-8 md:mb-12">
           <motion.h2
@@ -34,7 +34,7 @@ const Weddings = () => {
             <motion.p
               {...fadeInUp}
               transition={{ delay: 0.6 }}
-              className="text-base md:text-lg max-w-2xl"
+              className="text-base md:text-lg max-w-2xl leading-relaxed text-primary"
             >
               Zorganizuj niezapomniane chwile w wyjątkowej atmosferze! Oferujemy
               profesjonalną obsługę i przestrzenie idealne na wesela, komunie,
@@ -53,14 +53,14 @@ const Weddings = () => {
           </div>
         </div>
 
-        {/* Images Grid */}
-        <div className="grid grid-cols-12 gap-4 md:gap-6 h-[calc(100vh-300px)]">
+        {/* Images Grid - Keep existing layout but remove the calculated height */}
+        <div className="grid grid-cols-12 gap-4 md:gap-6">
           {/* Left side images - full width on mobile */}
-          <div className="col-span-12 md:col-span-8 grid grid-rows-2 md:grid-rows-4 gap-1 md:gap-6 ">
+          <div className="col-span-12 md:col-span-8 grid grid-rows-2 gap-1 md:gap-6">
             <motion.div
               {...fadeInScale}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="relative w-full h-[250px]"
+              className="relative w-full h-[250px] md:h-[250px] lg:h-[350px]"
             >
               <Image
                 src="/wedding/wed-room-04.jpg"
@@ -74,7 +74,7 @@ const Weddings = () => {
             <motion.div
               {...fadeInScale}
               transition={{ duration: 0.5, delay: 0.3 }}
-              className="relative w-full h-[250px]"
+              className="relative w-full h-[250px] md:h-[250px] lg:h-[350px]"
             >
               <Image
                 src="/wedding/table-02.jpg"
@@ -91,7 +91,7 @@ const Weddings = () => {
             <motion.div
               {...fadeInScale}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="relative w-full h-[520px]"
+              className="relative w-full h-[520px] lg:h-[720px]"
             >
               <Image
                 src="/wedding/wed-room-06.jpg"
@@ -104,7 +104,7 @@ const Weddings = () => {
             <motion.div
               {...fadeInScale}
               transition={{ duration: 0.5, delay: 0.5 }}
-              className="relative w-full h-[520px]"
+              className="relative w-full h-[520px] lg:h-[720px]"
             >
               <Image
                 src="/wedding/wed-room-10.jpg"
