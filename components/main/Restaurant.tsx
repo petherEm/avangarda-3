@@ -24,7 +24,7 @@ const Restaurant = ({ dict, lang }: RestaurantProps) => {
 
   return (
     <Container className="w-full text-primary py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto sm:px-4">
         {/* Main Section: Text Left, Image Right */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-8">
           {/* Left Column - Text */}

@@ -315,7 +315,7 @@ export default function RoomsIntro({ dict, lang }: RoomsIntroProps) {
 
   return (
     <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto sm:px-4">
         {/* Introduction Section with Building Photo */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center mb-16">
           <div>
@@ -401,19 +401,19 @@ export default function RoomsIntro({ dict, lang }: RoomsIntroProps) {
             <TabsList className="grid w-full max-w-md mx-auto grid-cols-4 mb-8 bg-white rounded-lg p-1 ">
               <TabsTrigger
                 value="all"
-                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
+                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-b-avangarda rounded-none"
               >
                 {t("rooms.tabs.all")}
               </TabsTrigger>
               <TabsTrigger
                 value="standard"
-                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
+                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-b-avangarda rounded-none"
               >
                 {t("rooms.tabs.standard")}
               </TabsTrigger>
               <TabsTrigger
                 value="family"
-                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
+                className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-b-avangarda rounded-none"
               >
                 {t("rooms.tabs.family")}
               </TabsTrigger>

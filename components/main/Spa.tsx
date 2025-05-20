@@ -19,7 +19,7 @@ const Spa = ({ lang = "pl", dict }: SpaProps) => {
 
   return (
     <Container className="w-full text-primary py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto sm:px-4">
         {/* Images Container */}
         <div className="w-full grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 mb-8 md:mb-12">
           {/* First Image */}

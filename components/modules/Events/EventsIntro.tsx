@@ -102,7 +102,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
 
   return (
     <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto sm:px-4">
         {/* Introduction Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
           <div>
@@ -180,7 +180,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
                 <TabsTrigger
                   key={venueKey}
                   value={venueKey}
-                  className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-avangarda rounded-none"
+                  className="data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-b-avangarda rounded-none"
                 >
                   {t(VENUES_DATA[venueKey].nameKey)}
                 </TabsTrigger>
@@ -268,7 +268,7 @@ export default function EventsIntro({ dict, lang }: EventsIntroProps) {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="mb-20 bg-pink-50 rounded-xl p-8"
+          className="mb-20 bg-pink-50 p-1 sm:p-8"
         >
           <div className="flex items-center justify-center gap-3 mb-8">
             {/* <CalendarIcon className="h-7 w-7 text-pink-500" /> */}

@@ -48,7 +48,7 @@ const About = ({ dict, lang }: AboutProps) => {
 
   return (
     <Container className="w-full text-primary py-12 bg-gradient-to-b from-white to-gray-50">
-      <div className="max-w-7xl mx-auto px-4 py-12">
+      <div className="max-w-7xl mx-auto sm:px-4 py-12">
         {/* Hero Section with Images */}
         <div className="mb-10 relative">
           <div className="grid grid-cols-12 gap-4">
@@ -129,7 +129,7 @@ const About = ({ dict, lang }: AboutProps) => {
             transition={{ delay: 0.3 }}
             className="lg:col-span-6 h-full flex"
           >
-            <div className="bg-white p-6 shadow-md border border-gray-100 w-full h-full">
+            <div className="bg-white sm:p-6 shadow-md border border-gray-100 w-full h-full">
               <div className="flex items-center gap-3 mb-4">
                 <h2 className="text-xl font-bold text-gray-900">
                   Co nas wyróżnia
@@ -139,7 +139,7 @@ const About = ({ dict, lang }: AboutProps) => {
 
               <div className="grid grid-cols-2 gap-4">
                 {/* Green Location */}
-                <div className="group p-4 bg-gradient-to-br from-green-50 to-green-100/30 hover:shadow-md transition-all duration-300">
+                <div className="group p-2 sm:p-4 bg-gradient-to-br from-green-50 to-green-100/30 hover:shadow-md transition-all duration-300">
                   <div className="bg-green-100 p-2 text-green-600 w-10 h-10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                     <TreePine className="w-5 h-5" />
                   </div>
@@ -153,7 +153,7 @@ const About = ({ dict, lang }: AboutProps) => {
                 </div>
 
                 {/* Wellness & Spa */}
-                <div className="group p-4 bg-gradient-to-br from-blue-50 to-blue-100/30 hover:shadow-md transition-all duration-300">
+                <div className="group p-2 sm:p-4 bg-gradient-to-br from-blue-50 to-blue-100/30 hover:shadow-md transition-all duration-300">
                   <div className="bg-blue-100 p-2 text-blue-600 w-10 h-10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                     <Waves className="w-5 h-5" />
                   </div>
@@ -167,7 +167,7 @@ const About = ({ dict, lang }: AboutProps) => {
                 </div>
 
                 {/* Restaurant */}
-                <div className="group p-4 bg-gradient-to-br from-amber-50 to-amber-100/30 hover:shadow-md transition-all duration-300">
+                <div className="group p-2 sm:p-4 bg-gradient-to-br from-amber-50 to-amber-100/30 hover:shadow-md transition-all duration-300">
                   <div className="bg-amber-100 p-2 text-amber-600 w-10 h-10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                     <Utensils className="w-5 h-5" />
                   </div>
@@ -181,7 +181,7 @@ const About = ({ dict, lang }: AboutProps) => {
                 </div>
 
                 {/* Events & Meetings */}
-                <div className="group p-4 bg-gradient-to-br from-pink-50 to-pink-100/30 hover:shadow-md transition-all duration-300">
+                <div className="group p-2 sm:p-4 bg-gradient-to-br from-pink-50 to-pink-100/30 hover:shadow-md transition-all duration-300">
                   <div className="bg-pink-100 p-2 text-pink-600 w-10 h-10 flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
                     <CalendarHeart className="w-5 h-5" />
                   </div>
@@ -238,7 +238,7 @@ const About = ({ dict, lang }: AboutProps) => {
             </div>
 
             {/* Ratings Section */}
-            <div className="bg-white p-5 shadow-md border border-gray-100 mt-6">
+            <div className="bg-white sm:p-5 shadow-md border border-gray-100 mt-6">
               <div className="flex items-center gap-3 mb-4">
                 <h2 className="text-xl font-bold text-gray-900">Oceny gości</h2>
                 <div className="h-px flex-1 bg-gradient-to-r from-avangarda/20 to-transparent"></div>

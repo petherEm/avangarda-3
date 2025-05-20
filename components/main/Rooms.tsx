@@ -31,7 +31,7 @@ const Rooms = ({ lang }: RoomsProps) => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
       <div className="absolute p-4 inset-0 sm:inset-3 flex flex-col justify-end">
-        <div className="max-w-7xl mx-auto px-4 pb-16 md:pb-24">
+        <div className="max-w-7xl mx-auto sm:px-4 pb-16 md:pb-24">
           <div className="space-y-6">
             <motion.h1
               initial={{ opacity: 0, y: 20 }}

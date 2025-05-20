@@ -48,7 +48,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
 
   return (
     <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto sm:px-4">
         {/* Header Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
           <div>
@@ -76,7 +76,7 @@ const GastroIntro = ({ dict, lang }: GastroIntroProps) => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="space-y-8 bg-pink-50 p-6"
+            className="space-y-8 bg-pink-50 p-2 sm:p-6"
           >
             <div className="grid grid-cols-2 gap-8">
               <div>

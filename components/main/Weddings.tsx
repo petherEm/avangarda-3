@@ -20,7 +20,7 @@ const fadeInScale = {
 const Weddings = () => {
   return (
     <Container className="w-full text-primary py-16 md:py-24 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto sm:px-4">
         {/* Content Section */}
         <div className="mb-8 md:mb-12">
           <motion.h2

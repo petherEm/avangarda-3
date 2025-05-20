@@ -27,7 +27,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
 
   return (
     <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto sm:px-4">
         {/* Introduction Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start mb-16">
           <div>
@@ -106,13 +106,22 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
 
               <Tabs defaultValue="massage" className="w-full mb-6">
                 <TabsList className="grid w-full grid-cols-3">
-                  <TabsTrigger value="massage">
+                  <TabsTrigger
+                    value="massage"
+                    className="flex-1 min-w-[100px] data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-b-avangarda/90 rounded-none whitespace-nowrap px-2"
+                  >
                     {t("spa.treatments.massage.name")}
                   </TabsTrigger>
-                  <TabsTrigger value="face">
+                  <TabsTrigger
+                    value="face"
+                    className="flex-1 min-w-[100px] data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-b-avangarda/90 rounded-none whitespace-nowrap px-2"
+                  >
                     {t("spa.treatments.face.name")}
                   </TabsTrigger>
-                  <TabsTrigger value="rituals">
+                  <TabsTrigger
+                    value="rituals"
+                    className="flex-1 min-w-[100px] data-[state=active]:bg-transparent data-[state=active]:text-avangarda data-[state=active]:border-b-2 data-[state=active]:border-b-avangarda/90 rounded-none whitespace-nowrap px-2"
+                  >
                     {t("spa.treatments.rituals.name")}
                   </TabsTrigger>
                 </TabsList>
@@ -183,6 +192,9 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
           </div>
         </motion.div>
 
+        {/* Pool Section */}
+        <PoolSection lang={lang} dict={dict} />
+
         {/* Salt Room Section */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -195,7 +207,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
           </h2>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
+            <div className="order-1 lg:order-2">
               <h3 className="text-2xl font-medium mb-4">
                 {t("spa.saltRoomSubtitle")}
               </h3>
@@ -267,7 +279,7 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
               </div>
             </div>
 
-            <div className="relative aspect-[3/4] w-full overflow-hidden order-1 lg:order-2">
+            <div className="relative aspect-[3/4] w-full overflow-hidden order-2 lg:order-1">
               <Image
                 src="/spa/spa-1.png"
                 alt={t("spa.saltRoomTitle")}
@@ -374,9 +386,6 @@ export default function SpaIntro({ dict, lang }: SpaIntroProps) {
             </div>
           </div>
         </motion.div>
-
-        {/* Pool Section */}
-        <PoolSection lang={lang} dict={dict} />
 
         {/* Opening Hours & Prices Section */}
         <motion.div

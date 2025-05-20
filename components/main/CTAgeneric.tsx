@@ -65,7 +65,8 @@ const CallToAction = () => {
             transition={{ delay: 0.4 }}
             className="text-4xl md:text-5xl font-semibold uppercase tracking-wider mb-6"
           >
-            Nie czekaj, zarezerwuj już dziś
+            Nie czekaj, zarezerwuj już{" "}
+            <span className="text-avangarda">dziś!</span>
           </motion.h2>
 
           <motion.p

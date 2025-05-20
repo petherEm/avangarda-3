@@ -26,11 +26,6 @@ export default async function EntertainmentMainPage({
       </AnimateOnScroll>
 
       <AnimateOnScroll>
-        {/* Pool Section */}
-        <PoolSection lang={lang} dict={dict} />
-      </AnimateOnScroll>
-
-      <AnimateOnScroll>
         <ClubCoola dict={dict} lang={lang} />
       </AnimateOnScroll>
 

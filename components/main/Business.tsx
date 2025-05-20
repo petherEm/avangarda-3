@@ -45,7 +45,7 @@ const Business = ({ lang = "pl", dict }: BusinessProps) => {
 
   return (
     <Container className="w-full text-primary py-8 md:py-14 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto sm:px-4">
         <div className="grid md:grid-cols-12 gap-8 md:gap-12 items-center">
           {/* Content Section - Reduced width to make more room for images */}
           <motion.div

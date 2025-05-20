@@ -15,11 +15,18 @@ import {
   PlayIcon as Playground,
   Leaf,
 } from "lucide-react";
+import PoolSection from "@/components/pool-section";
 
-export default function OutdoorEntertainment() {
+export default function OutdoorEntertainment({
+  dict,
+  lang,
+}: {
+  dict: any;
+  lang: string;
+}) {
   return (
     <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto sm:px-4">
         {/* Header Section - Beautiful Surroundings */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-start mb-16">
           <div>
@@ -52,7 +59,7 @@ export default function OutdoorEntertainment() {
               transition={{ delay: 0.4 }}
               className="grid grid-cols-2 gap-4"
             >
-              <div className="bg-pink-50 p-4 flex items-start gap-3">
+              <div className="bg-pink-50 p-2 sm:p-4 flex items-start gap-3">
                 <Trees className="h-5 w-5 text-green-600 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-medium">Lasy i łąki</h3>
@@ -61,7 +68,7 @@ export default function OutdoorEntertainment() {
                   </p>
                 </div>
               </div>
-              <div className="bg-pink-50 p-4 flex items-start gap-3">
+              <div className="bg-pink-50 p-2 sm:p-4 flex items-start gap-3">
                 <Waves className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="font-medium">Rzeki</h3>
@@ -335,6 +342,8 @@ export default function OutdoorEntertainment() {
             </div>
           </div>
         </motion.div>
+
+        <PoolSection lang={lang} dict={dict} />
       </div>
     </Container>
   );

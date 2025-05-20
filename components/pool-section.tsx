@@ -15,7 +15,7 @@ const PoolSection = ({ dict, lang }) => {
   const t = (key: string) => getNestedValue(dict, key) || key;
 
   return (
-    <Container className="mt-6 sm:mt-6 md:mt-4 lg:mt-0 mb-6 lg:mb-0 bg-white w-full text-primary lg:py-20">
+    <>
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -187,7 +187,7 @@ const PoolSection = ({ dict, lang }) => {
           </div>
         </div>
       </motion.div>
-    </Container>
+    </>
   );
 };
 

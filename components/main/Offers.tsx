@@ -124,7 +124,7 @@ const Offers = ({ dict, lang, offers }: OffersProps) => {
 
   return (
     <Container className="w-full text-primary bg-gradient-to-b from-white to-gray-50">
-      <div className="relative max-w-7xl mx-auto px-4 py-12">
+      <div className="relative max-w-7xl mx-auto sm:px-4 py-12">
         <div className="mb-12 md:mb-16">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
